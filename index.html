@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="with=device-width" ,initial-scale="1.0">
+    <title>AI LAB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!----- Front Page ------>
+    <section class="header">
+
+        <nav class="main-header">
+            <a href="https://wiki.bitsathy.ac.in/" class="nav-img">
+                <img src="logo.png" alt="Icon" width="100px" height="100px">
+
+                <div class="clg-name1">
+                    Bannari Amman Institute of Technology
+                </div>
+                <div class="clg-name2">BIT</div>
+            </a>
+
+            <div class="main-nav" id="navlinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li> <a href="">Gallery</a></li>
+                    <li> <a href="">Projects</a></li>
+                    <li> <a href="">Contact US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Artificial Intelligence Laboratory</h1><br>
+            <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
+            <a href="" class="hero-btn">Get Started</a>
+        </div>
+
+
+        <div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+    </section>
+
+    <!----- Guest Visit ------>
+
+    <section class="guest-visit">
+        <h1>Guests Visited Our Laboratory
+        </h1>
+        <div class="guest-visit-row">
+            <div class="guest-visit-col">
+                <h3>Idell Durgan</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="guest-visit-col">
+                <h3>Nora Kerluke</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+            <div class="guest-visit-col">
+                <h3>Lavada Frami</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute
+                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+
+    </section>
+
+    <!--------Javascript for Toggle Menu--------->
+
+    <script>
+        var navlinks = document.getElementById('navlinks');
+
+        function showmenu() {
+            navlinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navlinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+
+</html>

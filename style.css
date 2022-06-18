@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', 'Poppins';
+}
+
+
+/*----------- Navigation Bar ---------*/
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.main-nav a {
+    color: inherit;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.main-nav a:hover {
+    color: #adadad;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-img {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    color: inherit;
+    text-decoration: none;
+}
+
+.clg-name1 {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.clg-name2 {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+/*------ Landing Page Content ------*/
+
+.text-box {
+    width: 90;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #e0d9d9;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #5390d9;
+    background: #5390d9;
+    transition: 0.5s;
+}
+
+nav .fa {
+    display: none;
+}
+
+
+/*----- Guest Visited -----*/
+
+.guest-visit {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+p {
+    color: rgb(152, 152, 152);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.guest-visit-row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.guest-visit-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 640px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+    .text-box p {
+        font-size: 9px;
+        color: #e0d9d9;
+    }
+    .main-nav ul li {
+        display: block;
+    }
+    .main-nav {
+        position: absolute;
+        background: #f9844a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -223px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .main-nav ul {
+        padding: 30px;
+    }
+    .circle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .clg-name2 {
+        display: none;
+    }
+}
+
+
+/*cube animation*/
+
+.background {
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0px;
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #D7D4E4;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    border-color: #FFF;
+}
+
+.cube:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+
+.cube:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+
+.cube:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+}
+
+.cube:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+}
+
+.cube:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
