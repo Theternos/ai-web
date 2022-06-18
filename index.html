@@ -6,6 +6,8 @@
     <title>AI LAB</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
@@ -16,7 +18,7 @@
     <section class="header">
 
         <nav class="main-header">
-            <a href="https://wiki.bitsathy.ac.in/" class="nav-img">
+            <a href="https://www.bitsathy.ac.in/" class="nav-img">
                 <img src="logo.png" alt="Icon" width="100px" height="100px">
 
                 <div class="clg-name1">
@@ -37,20 +39,12 @@
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
 
-        <div class="text-box">
-            <h1>Artificial Intelligence Laboratory</h1><br>
-            <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
-            <a href="" class="hero-btn">Get Started</a>
-        </div>
 
+        <!-- particles connection 
+        <div id="large-header" class="large-header">
+            <canvas id="demo-canvas"></canvas>
+        </div>  -->
 
-        <div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-            <div class="cube"></div>
-        </div>
         <!--Word Animation-->
         <div class="content">
             <div class="content__container">
@@ -66,7 +60,18 @@
                 </ul>
             </div>
         </div>
+
+        <!--Content-->
+        <div class="text-box">
+            <h1>Artificial Intelligence Laboratory</h1><br>
+            <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
+            <a href="" class="hero-btn">Get Started</a>
+        </div>
     </section>
+
+    <!--Page 2 Nvidia Certification Page-->
+
+    <section class="nvidia"></section>
 
     <!----- Guest Visit ------>
 
@@ -75,6 +80,8 @@
         </h1>
         <div class="guest-visit-row">
             <div class="guest-visit-col">
+                <div class="guest-visit-pic">
+                    <img src="/"></div>
                 <h3>Idell Durgan</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duisaute
                     irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -172,6 +179,11 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
     <script src="./script.js"></script>
+    <!-- particles Script -->
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js'></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js'></script>
+    <script src='https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js'></script>
+    <script src="./particles_script.js"></script>
 
 
     <!--------Javascript for Toggle Menu--------->
