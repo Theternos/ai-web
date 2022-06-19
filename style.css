@@ -1,3 +1,5 @@
+    @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+    @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
     * {
         margin: 0;
         padding: 0;
@@ -229,62 +231,12 @@
         border: 1px solid #5390d9;
         background: #5390d9;
         transition: 0.5s;
+        color: #fff;
+        text-decoration: none;
     }
     
     nav .fa {
         display: none;
-    }
-    /*----- Guest Visited -----*/
-    
-    .guest-visit {
-        width: 80%;
-        margin: auto;
-        text-align: center;
-        padding-top: 100px;
-    }
-    
-    h1 {
-        font-size: 25px;
-        font-weight: 600;
-    }
-    
-    p {
-        color: rgb(152, 152, 152);
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 22px;
-        padding: 10px;
-    }
-    
-    .guest-visit-row {
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .guest-visit-col {
-        flex-basis: 31%;
-        background: #fff3f3;
-        border-radius: 10px;
-        margin-bottom: 5%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-    }
-    
-    .guest-visit-col {
-        flex-basis: 31%;
-        border-radius: 50px;
-        background: #e0e0e0;
-        margin-bottom: 5%;
-        padding: 20px 12px;
-        box-sizing: border-box;
-        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-    }
-    
-    .guest-visit-pic {
-        border-radius: 50px;
-        background: #e0e0e0;
-        box-shadow: 9px 9px 17px #bebebe, -9px -9px 17px #ffffff;
     }
     
     @media screen and (max-width: 640px) {
@@ -326,9 +278,250 @@
             display: none;
         }
     }
+    /*NVIDIA- Section*/
+    
+    .nvidia {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(./background_2.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .nvidia-text-box {
+        position: absolute;
+        width: 805.25px;
+        height: 162px;
+    }
+    
+    .nvidia-text-box h1 {
+        position: absolute;
+        width: 715px;
+        height: 81px;
+        left: 12%;
+        top: 10.6%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 98px;
+        color: #FFFFFF;
+    }
+    
+    .nvidia-text-box h3 {
+        position: absolute;
+        width: 805px;
+        height: 81px;
+        left: 0%;
+        top: 65%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 50px;
+        line-height: 110px;
+        color: #FFFFFF;
+    }
+    
+    .nvidia-text-box h2 {
+        position: absolute;
+        width: 805px;
+        height: 81px;
+        left: 0%;
+        padding-top: 43%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 200;
+        font-size: 30px;
+        line-height: 110px;
+        color: #cecece;
+    }
+    
+    .nvidia-logo {
+        position: absolute;
+        left: 12%;
+        top: 50%;
+    }
+    
+    .nvidia-container {
+        padding-top: 30%;
+        padding-right: 45%;
+    }
+    
+    .nvidia-content {
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 100;
+        font-size: 28px;
+        color: #fafafa;
+    }
+    
+    .nvidia-dud {
+        color: #757575;
+    }
+    /*Achivements Cards*/
+    
+    .container {
+        font-family: tahoma;
+        align-items: center;
+        margin-top: 10%;
+    }
+    
+    .our-team {
+        padding: 30px 0 40px;
+        margin-bottom: 30px;
+        background-color: #f7f5ec;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .our-team .picture {
+        display: inline-block;
+        height: 130px;
+        width: 130px;
+        margin-bottom: 50px;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .our-team .picture::before {
+        content: "";
+        width: 100%;
+        height: 0;
+        border-radius: 50%;
+        background-color: #1369ce;
+        position: absolute;
+        bottom: 135%;
+        right: 0;
+        left: 0;
+        opacity: 0.9;
+        transform: scale(3);
+        transition: all 0.3s linear 0s;
+    }
+    
+    .our-team:hover .picture::before {
+        height: 100%;
+    }
+    
+    .our-team .picture::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #1369ce;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .our-team .picture img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transform: scale(1);
+        transition: all 0.9s ease 0s;
+    }
+    
+    .our-team:hover .picture img {
+        box-shadow: 0 0 0 14px #f7f5ec;
+        transform: scale(0.7);
+    }
+    
+    .our-team .title {
+        display: block;
+        font-size: 15px;
+        color: #4e5052;
+        text-transform: capitalize;
+    }
+    
+    .our-team .social {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #1369ce;
+        position: absolute;
+        bottom: -100px;
+        left: 0;
+        transition: all 0.5s ease 0s;
+    }
+    
+    .our-team:hover .social {
+        bottom: 0;
+    }
+    
+    .our-team .social li {
+        display: inline-block;
+    }
+    
+    .our-team .social li a {
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+        color: white;
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+    }
+    
+    .our-team .social li a:hover {
+        color: #1369ce;
+        background-color: #f7f5ec;
+    }
+    /*----- Guest Visited -----*/
+    
+    .guest-visit {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .guest-visit h1 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+    
+    .guest-visit p {
+        color: rgb(152, 152, 152);
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+    }
+    
+    .guest-visit-row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .guest-visit-col {
+        flex-basis: 31%;
+        background: #fff3f3;
+        border-radius: 10px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+    }
+    
+    .guest-visit-col {
+        flex-basis: 31%;
+        border-radius: 50px;
+        background: #e0e0e0;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    }
+    
+    .guest-visit-pic {
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 9px 9px 17px #bebebe, -9px -9px 17px #ffffff;
+    }
     /*Sliders*/
     
-    :root {
+     :root {
         --black: rgb(227, 227, 227);
         --blacker: #4b4b4b;
         --white: #fcd5ce;
@@ -445,7 +638,6 @@
         color: var(--white);
         font-size: .8rem
     }
-    /*MEDIA QUERIES*/
     
     @media screen and (max-width:1300px) {
         .main-container_tab {
@@ -463,13 +655,4 @@
         .main-container_tab {
             min-width: 100%;
         }
-    }
-    
-    .nvidia {
-        min-height: 100vh;
-        width: 100%;
-        background-image: url(./background_2.png);
-        background-position: center;
-        background-size: cover;
-        position: relative;
     }
