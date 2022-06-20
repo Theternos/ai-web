@@ -639,7 +639,7 @@ nav .fa {
 .ach_2_text {
     position: absolute;
     width: 44%;
-    height: 42%;
+    height: 40%;
     float: left;
     left: 13%;
     top: 61%;
@@ -852,12 +852,11 @@ nav .fa {
 
 /*Sliders*/
 
- :root {
-    --black: rgb(227, 227, 227);
+:root {
+    --black: rgb(0, 0, 0);
     --blacker: #4b4b4b;
     --white: #fcd5ce;
     --orange: #eea365;
-    --orangest: #ec7456;
 }
 
 html {
@@ -866,6 +865,11 @@ html {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+}
+
+.part_sliders h1 {
+    text-align: center;
+    margin-top: 55%;
 }
 
 .main-container {
@@ -900,8 +904,8 @@ html {
 }
 
 .main-container_tab {
-    min-width: 20%;
-    height: 300px;
+    min-width: 23%;
+    height: 320px;
     padding: 20px;
     background: var(--black);
     background: linear-gradient(45deg, var(--blacker) 0%, var(--black) 100%);
@@ -943,7 +947,8 @@ html {
 
 .main-container_tab_title {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 25px;
     color: var(--orange);
     margin: 0;
 }
@@ -955,15 +960,8 @@ html {
     align-items: center;
 }
 
-.main-container_tab_photo {
-    width: 50px;
-    height: 50px;
-    background-color: var(--orange);
-    border-radius: 500px;
-}
-
 .main-container_tab_author {
-    margin-left: 20px;
+    padding: 5px;
     font-family: 'Roboto Mono', monospace;
     color: var(--white);
     font-size: .8rem
