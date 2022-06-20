@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 @import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 * {
     margin: 0;
     padding: 0;
@@ -226,24 +227,94 @@
     color: #e0d9d9;
 }
 
+
+/* LET'S GO! - Button */
+
 .hero-btn {
-    display: inline-block;
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    text-transform: uppercase;
     text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     color: #fff;
-    border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
 }
 
-.hero-btn:hover {
-    border: 1px solid #5390d9;
-    background: #5390d9;
-    transition: 0.5s;
-    color: #fff;
+.hero-btn a {
+    color: #BFC0C0;
     text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#arrow-hover {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    transform: translateX(60px);
+    opacity: 0;
+    -webkit-transition: all .25s cubic-bezier(.14, .59, 1, 1.01);
+    transition: all .15s cubic-bezier(.14, .59, 1, 1.01);
+    margin: 0;
+    padding: 0 5px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+#button-5 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+#button-5 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+}
+
+#translate {
+    transform: rotate(50deg);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .3s ease-Out;
+}
+
+#button-5:hover #translate {
+    left: 0;
+}
+
+#button-5:hover a {
+    color: #2D3142;
+}
+
+
+/*Scrolling Down*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+#section1 {
+    height: 600px;
+}
+
+#section2 {
+    height: 600px;
 }
 
 nav .fa {
@@ -362,8 +433,8 @@ nav .fa {
 }
 
 .nvidia-container {
-    padding-top: 30%;
-    padding-right: 45%;
+    padding-top: 35%;
+    padding-right: 39.5%;
 }
 
 .nvidia-content {
@@ -568,10 +639,10 @@ nav .fa {
 .ach_2_text {
     position: absolute;
     width: 44%;
-    height: 38%;
+    height: 42%;
     float: left;
     left: 13%;
-    top: 60%;
+    top: 61%;
     border-radius: 39px;
     border-radius: 27px;
     background: #fffafa;
@@ -599,6 +670,105 @@ nav .fa {
 }
 
 .ach_2_text p {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    padding: 10%;
+    margin-top: 100px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.ach_3 {
+    float: left;
+    padding-left: 12%;
+    padding-top: 30%;
+}
+
+.ach_3_text {
+    position: absolute;
+    width: 44%;
+    height: 38%;
+    left: 43%;
+    top: 110%;
+    border-radius: 39px;
+    border-radius: 27px;
+    background: #fffafa;
+    box-shadow: inset 10px 10px 9px #e3dfdf, inset -10px -10px 9px #ffffff;
+}
+
+.ach_3_text h3 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    top: 11%;
+    filter: none;
+}
+
+.ach_3_text h5 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    margin-top: 20px;
+    filter: none;
+    padding: 8%;
+    font-size: 18px;
+}
+
+.ach_3_text p {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    padding: 10%;
+    margin-top: 65px;
+    font-size: smaller;
+    text-align: center;
+}
+
+.ach_4 {
+    float: right;
+    padding-right: 12%;
+    padding-top: 31%;
+}
+
+.ach_4_text {
+    position: absolute;
+    width: 44%;
+    height: 38%;
+    float: left;
+    left: 13%;
+    top: 163%;
+    border-radius: 39px;
+    border-radius: 27px;
+    background: #fffafa;
+    box-shadow: inset 10px 10px 9px #e3dfdf, inset -10px -10px 9px #ffffff;
+}
+
+.ach_4_text h3 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    top: 20%;
+    filter: none;
+}
+
+.ach_4_text h5 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    margin-top: 55px;
+    filter: none;
+    padding: 8%;
+    font-size: 18px;
+}
+
+.ach_4_text p {
     position: absolute;
     width: 100%;
     height: 30%;
