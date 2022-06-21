@@ -137,7 +137,7 @@
 
 /*----------- Navigation Bar ---------*/
 
-.header {
+.nav-header {
     min-height: 100vh;
     width: 100%;
     background-image: url(./background_1.png);
@@ -152,6 +152,8 @@
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
 }
 
 .main-nav ul {
@@ -884,6 +886,7 @@ html {
     overflow-y: hidden;
     cursor: -webkit-grab;
     cursor: grab;
+    margin-bottom: 10%;
 }
 
 .main-container::-webkit-scrollbar {
