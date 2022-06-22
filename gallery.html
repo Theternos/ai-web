@@ -14,9 +14,12 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;display=swap'><link rel="stylesheet" href="./gallery_css.css">
 <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'><link rel="stylesheet" href="./gallery_css.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 <style>
   body {
-    background-image: url('kk.gif');  
+    background-image: url('bg.png');  
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -24,32 +27,41 @@
   </style>
 </head>
 <body>
-  <section>
-  <div class="bgm">
-    <nav>
-      <ul class="menuItems">
-        <li><a href='#' data-item='Home'>Home</a></li>
-        <li><a href='#' data-item='Objectives'>Objectives</a></li>
-        <li><a href='#' data-item='Achievements'>Achievements</a></li>
-        <li><a href='#' data-item='Gallery'>Gallery</a></li>
-        <li><a href='#' data-item='Projects'>Projects</a></li>
-      </ul>
+  <section class="header" id="section1">
+
+    <nav class="main-header">
+        <a href="https://www.bitsathy.ac.in/" class="nav-img">
+            <img src="logo.png" alt="Icon" width="100px" height="100px">
+            <div class="clg-name1">
+                Bannari Amman Institute of Technology
+            </div>
+            <div class="clg-name2">BIT</div>
+        </a>
+
+        <div class="main-nav" id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li> <a href="">Gallery</a></li>
+                <li> <a href="">Projects</a></li>
+                <li> <a href="">Contact US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
     </nav>
-  </div>
-  </section>
   <div class="container">
-    <h2 class="title">
+    <h2 class="title"> 
       <span class="title-word title-word-2">THE</span>
       <span class="title-word title-word-1">VIDEO</span>
       <span class="title-word title-word-3">GALLERY</span>
-    </h2>
+    </h2></div>
   </div>
 <div class="content">
   
   <div class="video-gallery">
    <div class="gallery-item"data-aos="fade-right">
     <div class="gallery-item1 ">
-     <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier"/>
+     <img src="a0.JPG" alt="Mount Rainier"/>
       <div class="gallery-item-caption">
         <!--<div>-->
           <h2>Mount Rainier</h2>
@@ -62,7 +74,7 @@
 
     <div class="gallery-item"data-aos="fade-left">
       <div class="gallery-item2">
-      <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park"/>
+      <img src="a01.JPG" alt="Olympic National Park"/>
       <div class="gallery-item-caption">
         <!--<div>-->
           <h2>Olympic National Park</h2>
@@ -75,7 +87,7 @@
     
     <div class="gallery-item"data-aos="fade-right">
       <div class="gallery-item3">
-     <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
+     <img src="achivement_1.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
       <div class="gallery-item-caption">
         <!--<div>-->
           <h2>North Cascades</h2>
@@ -88,7 +100,7 @@
 
     <div class="gallery-item"data-aos="fade-left">
       <div class="gallery-item4">
-      <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens"/>
+      <img src="a1.jpg" alt="Mount St Helens"/>
       <div class="gallery-item-caption">
         <!--<div>-->
           <h2>Mount St. Helens</h2>
@@ -100,7 +112,7 @@
   </div>
 
     <div class="gallery-item "data-aos="fade-right">
-      <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier"/>
+      <img src="a2.jpg" alt="Mount Rainier"/>
        <div class="gallery-item-caption">
          <!--<div>-->
            <h2>Mount Rainier</h2>
@@ -111,7 +123,7 @@
      </div>
  
      <div class="gallery-item"data-aos="fade-left">
-       <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park"/>
+       <img src="a3.jpg" alt="Olympic National Park"/>
        <div class="gallery-item-caption">
          <!--<div>-->
            <h2>Olympic National Park</h2>
@@ -122,7 +134,7 @@
      </div>
      
      <div class="gallery-item"data-aos="fade-right">
-      <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
+      <img src="a4.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
        <div class="gallery-item-caption">
          <!--<div>-->
            <h2>North Cascades</h2>
@@ -133,7 +145,7 @@
      </div>
  
      <div class="gallery-item"data-aos="fade-left">
-       <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens"/>
+       <img src="a5.png" alt="Mount St Helens"/>
        <div class="gallery-item-caption">
          <!--<div>-->
            <h2>Mount St. Helens</h2>
@@ -153,5 +165,18 @@
 <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
 <script src='https://unpkg.com/gsap'></script><script  src="./gallery_script.js"></script>
 <script src='https://unpkg.com/aos@next/dist/aos.js'></script><script  src="./gallery_script.js"></script>
+<script src='https://unpkg.com/splitting/dist/splitting.js'></script>
+<script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script><script  src="./gallery_script.js"></script>
+<script>
+  var navlinks = document.getElementById('navlinks');
+
+  function showmenu() {
+      navlinks.style.right = "0 ";
+  }
+
+  function hidemenu() {
+      navlinks.style.right = "-200px ";
+  }
+</script>
 </body>
 </html>

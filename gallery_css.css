@@ -2,12 +2,82 @@ body {
   font-family: "Overpass", sans-serif;
   box-sizing: border-box;
 }
+.navi-header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(./background_1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-decoration: none;
+}
 
-.section-header {
+.nav {
   display: flex;
-  justify-content: center;
+  padding: 2% 6%;
+  justify-content: space-between;
   align-items: center;
-  background: #645e5e;
+  position: fixed;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.main-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  font-weight:bold;
+  color: white;
+  text-align:right;
+}
+
+.main-nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  color: #adadad;
+  text-decoration: none;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav-img {
+  display: flex;
+  align-items: center;
+  font-size: 1.4em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clg-name1 {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  text-align: left;
+  font-weight:bold;
+}
+
+.clg-name1 h3 {
+  text-decoration: none;
+}
+
+.clg-name2 {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight:bold;
 }
 
 .section-header h1 {
@@ -38,7 +108,6 @@ body {
  .gallery-item1 {
   width: 700px;
   height: 400px;
-  background: #000;
   cursor: pointer;
   overflow: hidden;
   animation:mymove 5s linear1;
@@ -67,10 +136,10 @@ body {
   position: relative;
   display: block;
   width: 115%;
-  height: 375px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: .5;
+  opacity: 0.9;
   /*transition: opacity .35s, transform .35s;*/
   transition: all 350ms ease-in-out;
   transform: translate3d(-23px, 0, 0);
@@ -208,47 +277,6 @@ p:hover::before {
   width: 100%;
 }
 
-nav {
-  margin: 25px;
-  
-}
-nav .menuItems {
-  list-style: none;
-  display: flex;
-}
-nav .menuItems li {
-  margin: 50px;
-}
-nav .menuItems li a {
-  text-decoration: none;
-  color: #8f8f8f;
-  font-size: 30px;
-  font-weight: 400;
-  transition: all 0.5s ease-in-out;
-  position: relative;
-  text-transform: uppercase;
-  animation: mymove 2s linear 1;
-}
-@keyframes mymove {
-  from {top: -100px;}
-  to {top: 0px;}
-}
-nav .menuItems li a::before {
-  content: attr(data-item);
-  transition: 0.5s;
-  color: #ef5050;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0;
-  overflow: hidden;
-}
-nav .menuItems li a:hover::before {
-  width: 100%;
-  transition: all 0.5s ease-in-out;
-}
 
 
 body {
@@ -402,5 +430,50 @@ h1 .char {
   font-weight: 800;
   font-size: 5vw;
   text-transform: uppercase;
+}
+.text--random [data-scroll='out'] .char:nth-of-type(1) {
+  transform: translateX(108%) translateY(122%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(2) {
+  transform: translateX(60%) translateY(-111%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(3) {
+  transform: translateX(-165%) translateY(194%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(4) {
+  transform: translateX(144%) translateY(230%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(5) {
+  transform: translateX(220%) translateY(-101%);
+}
+.text--random [data-scroll='out'] .char:nth-of-type(6) {
+  transform: translateX(88%) translateY(-109%);
+}
+.page .char {
+  display: inline-block;
+  -webkit-animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+          animation-delay: calc(0.25s + var(--char-index) * 0.1s);
+  transition: all 0.25s calc(0.25s + var(--char-index) * 0.1s);
+}
+.page {
+  height: 50vh;
+  width: 50vw;
+  scroll-snap-align: center;
+  font-size: calc(var(--font-size) * 1px);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.text--perspective {
+  perspective: 1000px;
+}
+.text--perspective .char {
+  transition: transform 0.25s calc(0.25s + var(--char-index) * 0.1s), opacity 0.05s calc(0.25s + var(--char-index) * 0.1s);
+}
+.text--perspective [data-scroll='out'] .char {
+  opacity: 0;
+  transform: translate3d(-25px, -20px, -800px);
 }
 
