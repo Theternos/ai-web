@@ -11,27 +11,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='./card.css '>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="./slideshow_style.css">
+    <link rel="stylesheet" type="text/css" href="./linking-card.css" />
+
 </head>
 
 <body>
 
     <!----- Front Page ------>
-    <section class="nav-header" id="section1">
+
+    <section class="navi-header" id="section1">
 
         <nav class="main-header">
-            <a href="https://www.bitsathy.ac.in/" class="nav-img">
-                <img src="logo.png" alt="Icon" width="100px" height="100px">
+            <div class="nav-img">
+                <a href="https://www.bitsathy.ac.in/">
+                    <img src="logo.png" alt="Icon" width="100px" height="100px">
+                </a>
                 <div class="clg-name1">
                     Bannari Amman Institute of Technology
                 </div>
                 <div class="clg-name2">BIT</div>
-            </a>
+            </div>
 
             <div class="main-nav" id="navlinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li> <a href="">Gallery</a></li>
+                    <li> <a href="./gallery.html">Gallery</a></li>
                     <li> <a href="">Projects</a></li>
                     <li> <a href="">Contact US</a></li>
                 </ul>
@@ -63,33 +69,40 @@
 
         <!--Content-->
         <div class="text-box">
-            <h1>Artificial Intelligence Laboratory</h1><br>
+            <h1>Artificial Intelligence</h1>
+            <h2>Special Laboratory</h2><br>
             <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
-            <div class="hero-btn" id="button-5">
+            <div class="hero-btn-1" id="button-5">
                 <div id="translate"></div>
                 <a href="#section2">LETS'S GO!</a>
             </div>
         </div>
     </section>
 
+
     <!--Page 2 Nvidia Certification Page-->
 
     <section class="nvidia" id="section2">
         <div class="nvidia-text-box">
-            <a href="https://www.nvidia.com/en-in/training/" class="nvidia-logo">
-                <img src="./nvidia-logo.png" alt="Nvidia Logo" width="92px" height="50px">
+            <a href="https://www.nvidia.com/en-in/training/" class="nvidia-logo" target="_blank" rel="noreferrer noopener">
+                <img src="./nvidia-logo.png" alt="Nvidia Logo" width="140px" height="90px">
             </a>
-            <h1>NVIDIA Certified</h1>
-            <h3>Deep Learning Institute</h3>
-            <h2>You will Learn</h2>
-        </div>
+            <h1>NVIDIA</h1>
+            <h3>Certified Deep Learning Institute</h3>
+            <h2>Here are some online courses for you </h2>
 
+        </div>
+        <div class="hero-btn-2" id="button-3">
+            <div id="circle2"></div>
+            <a href="https://www.nvidia.com/en-in/training/online/" target="_blank" rel="noreferrer noopener">Courses Offered!</a>
+        </div>
         <!-- Content Animaion in Page 2-->
         <div class="nvidia-container">
             <div class="nvidia-content">
             </div>
         </div>
     </section>
+
 
     <!--Achievements-->
 
@@ -101,16 +114,18 @@
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                     <div class="our-team">
+
                         <div class="picture">
                             <img class="img-fluid" src="./ach1.jpeg" alt="Image Of Gowtham R">
                         </div>
                         <div class=" team-content ">
+                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
                             <h3 class="name ">Gowtham R</h3>
                             <h4 class="title ">EEE</h4>
                         </div>
                         <ul class="social ">
                             <li>
-                                <a>First Place [ 100 Marks] </a>
+                                <a>First Place [ 100 Marks ] </a>
                             </li>
                         </ul>
                     </div>
@@ -121,12 +136,13 @@
                             <img class="img-fluid " src="./ach2.jpeg" alt="Image Of Ramya E">
                         </div>
                         <div class="team-content ">
+                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
                             <h3 class="name ">Ramya E</h3>
                             <h4 class="title ">ECE</h4>
                         </div>
                         <ul class="social ">
                             <li>
-                                <a>Second Place [ 96 Marks] </a>
+                                <a>Second Place [ 96 Marks ] </a>
                             </li>
                         </ul>
                     </div>
@@ -137,12 +153,13 @@
                             <img class="img-fluid " src="./ach3.jpeg" alt="Image Of Rakeshkumar P">
                         </div>
                         <div class="team-content ">
+                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
                             <h3 class="name ">Rakeshkumar P</h3>
                             <h4 class="title ">Aero</h4>
                         </div>
                         <ul class="social ">
                             <li>
-                                <a>Fourth Place [ 96 Marks] </a>
+                                <a>Fourth Place [ 96 Marks ] </a>
                             </li>
 
                         </ul>
@@ -154,12 +171,13 @@
                             <img class="img-fluid " src="./ach4.jpeg" alt="Image Of Niraimathi P">
                         </div>
                         <div class="team-content ">
+                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
                             <h3 class="name ">Niraimathi P</h3>
                             <h4 class="title ">IT</h4>
                         </div>
                         <ul class="social ">
                             <li>
-                                <a>Fifth Place [ 96 Marks] </a>
+                                <a>Fifth Place [ 96 Marks ] </a>
                             </li>
                         </ul>
                     </div>
@@ -168,15 +186,15 @@
         </div>
     </section>
 
-    <!----- Achivements Photo ------>
 
+    <!----- Achivements Photo ------>
     <section class="ach">
         <div class="ach_1">
             <img src="./achivement_1.jpg" alt="Achivement Students Picture" width="400px" height="275px">
         </div>
         <div class="ach_1_text">
             <h3>IET HACKATHON WINNERS</h3>
-            <h5>Students from AI club of BIT participated in IET Hackathon and won the FIRST prize</h5>
+            <h5>Students from AI lab of BIT participated in IET Hackathon and won the FIRST prize</h5>
             <p>This event is an intiative to receive ideas from the young innovative generation, working towards challenging areas such as EV charging, Soil Management, Net Zero Carbon (footprint reduction) – Transportation Intelligence, Super Charging,
                 Intelligence Vehicle, Water Management.</p>
         </div>
@@ -185,7 +203,7 @@
         </div>
         <div class="ach_2_text">
             <h3>ML-APPS 2K19 WINNERS</h3>
-            <h5>Students from AI club of BIT participated in ML-Apps 2k19 Hackathon conducted by KCG college of Technology and won the SECOND prize
+            <h5>Students from AI lab of BIT participated in ML-Apps 2k19 Hackathon conducted by KCG college of Technology and won the SECOND prize
             </h5>
             <p>It is a developing venture in which participants are expected to complete the product development as per the selected problem statements.</p>
         </div>
@@ -194,7 +212,7 @@
         </div>
         <div class="ach_3_text">
             <h3>MKCE HACKATHON WINNERS</h3>
-            <h5>Students from AI club of BIT participated in MKCE Hackathon and won the THIRD prize</h5>
+            <h5>Students from AI lab of BIT participated in MKCE Hackathon and won the THIRD prize</h5>
             <p>It is a developing venture in which participants are expected to complete the product development as per the selected problem statements.</p>
         </div>
         <div class="ach_4">
@@ -202,7 +220,7 @@
         </div>
         <div class="ach_4_text">
             <h3>SURGE 2K19 WINNERS</h3>
-            <h5>Students from AI club of BIT participated in SURGE 2k19 and won the THIRD prize</h5>
+            <h5>Students from AI lab of BIT participated in SURGE 2k19 and won the THIRD prize</h5>
             <p>Surge 2k19 is a National Level Technical Symposium organized by Electrical and Electronics Engineering, Velammal Engineering College.
 
             </p>
@@ -211,6 +229,7 @@
 
 
     <!--Guests Visited Sliders-->
+
     <section class="part_sliders">
         <h1>PARTICIPATIONS</h1>
 
@@ -364,6 +383,84 @@
         </div>
     </section>
 
+
+    <!-- Linking Cards -->
+
+    <section class="pricing-section bg-11">
+        <div class="pricing pricing--tenzin">
+            <div class="pricing__item">
+                <h3 class="pricing__title">List of</h3>
+                <div class="pricing__price"><span class="pricing__currency"></span>Patent<br> Filed</div>
+                <p class="pricing__sentence">These are the Patent filed by our AI Lab students from Bannari Amman Intit of Technology.</p>
+                <button class="pricing__action"><a href="https://docs.google.com/document/d/1JDv11uRe4_W0ZIpKJqP2nS0Yfak08_9Y7hLlMm_6exc/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+            </div>
+            <div class="pricing__item">
+                <h3 class="pricing__title">Special Lab</h3>
+                <div class="pricing__price"><span class="pricing__currency"></span>Competition Status</div>
+                <p class="pricing__sentence">By clicking here you can be knowing the Competition Status of students.</p>
+                <button class="pricing__action"><a href="https://docs.google.com/spreadsheets/d/1DKv9NL4gPJDG_LAiBBISe297eDKi_AzC/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+            </div>
+            <div class="pricing__item">
+                <h3 class="pricing__title">AI Lab</h3>
+                <div class="pricing__price"><span class="pricing__currency"></span>Consultancy Details</div>
+                <p class="pricing__sentence">Click the button below to know the Consultancy details of the AI Lab.</p>
+                <button class="pricing__action"><a href="https://docs.google.com/document/d/11TYPEnT5AqptAU7PhAOUslF2C86l1uLg/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+            </div>
+        </div>
+
+        <div class="pricing pricing--tenzin">
+            <div class="pricing__item">
+                <h3 class="pricing__title">AI Lab</h3>
+                <div class="pricing__price"><span class="pricing__currency"></span>Funding<br>Details</div>
+                <p class="pricing__sentence">By Click below you can know the funding details of AI Lab by Industries.</p>
+                <button class="pricing__action"><a href="https://docs.google.com/document/d/1iZSnTPAmcKYFiRYXQa6FcP1fuazaxllT/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank"
+                    rel="noreferrer noopener">Know More!</a></button>
+            </div>
+            <div class="pricing__item">
+                <h3 class="pricing__title">NVIDIA</h3>
+                <div class="pricing__price"><span class="pricing__currency"></span>Certification Completed List</div>
+                <p class="pricing__sentence">Click the below button to view the Certification Completed List from AI Lab.</p>
+                <button class="pricing__action"><a href="https://docs.google.com/document/d/1WHvBlSOENbwrg26AI7bd8HM4Q40U3ji6GB8eR6J34f0/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+            </div>
+            <div class="pricing__item">
+                <h3 class="pricing__title">AI Lab</h3>
+                <div class="pricing__price"><span class="pricing__currency"></span>Industry Sponsorship</div>
+                <p class="pricing__sentence">This is the information about the Industry Sponsorship to our AI Lab.</p>
+                <button class="pricing__action"><a href="https://docs.google.com/document/d/11tU0T4gGnqXlpI8tQhWQ2VHMjixeyRIM/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Slideshow -->
+
+    <section>
+        <div class="w3-content w3-section">
+            <img class="mySlides" src="a1.jpg" style="width:750px;height: 450px;">
+            <img class="mySlides" src="a2.jpg" style="width:750px;height:450px;">
+            <img class="mySlides" src="a3.jpg" style="width:750px;height:450px;">
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+
+
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js '></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js '></script>
@@ -394,5 +491,7 @@
     </script>
 
 </body>
+
+</html>
 
 </html>

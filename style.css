@@ -13,7 +13,7 @@
 .content {
     position: absolute;
     top: 30%;
-    left: 52.5%;
+    left: 53.5%;
     transform: translate(-50%, -50%);
     height: 160px;
     overflow: hidden;
@@ -21,6 +21,7 @@
     font-size: 35px;
     line-height: 40px;
     color: #ecf0f1;
+    margin-top: 3%;
 }
 
 .content__container {
@@ -41,7 +42,7 @@
 }
 
 .content__container__list {
-    margin-top: 0;
+    margin-top: 0.8%;
     padding-left: 110px;
     text-align: left;
     list-style: none;
@@ -137,7 +138,7 @@
 
 /*----------- Navigation Bar ---------*/
 
-.nav-header {
+.navi-header {
     min-height: 100vh;
     width: 100%;
     background-image: url(./background_1.png);
@@ -187,15 +188,20 @@
 .nav-img {
     display: flex;
     align-items: center;
-    font-size: 1.25em;
+    font-size: 1.4em;
     color: inherit;
     text-decoration: none;
 }
 
 .clg-name1 {
     margin-left: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: white;
+    text-decoration: none;
+    text-align: left;
+}
+
+.clg-name1 h3 {
     text-decoration: none;
 }
 
@@ -213,7 +219,7 @@
     width: 90;
     color: #fff;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 53%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -221,6 +227,10 @@
 
 .text-box h1 {
     font-size: 50px;
+}
+
+.text-box h2 {
+    font-size: 56px;
 }
 
 .text-box p {
@@ -232,7 +242,7 @@
 
 /* LET'S GO! - Button */
 
-.hero-btn {
+.hero-btn-1 {
     display: inline-flex;
     height: 40px;
     width: 150px;
@@ -248,7 +258,7 @@
     color: #fff;
 }
 
-.hero-btn a {
+.hero-btn-1 a {
     color: #BFC0C0;
     text-decoration: none;
     letter-spacing: 1px;
@@ -301,6 +311,71 @@
 }
 
 #button-5:hover a {
+    color: #2D3142;
+}
+
+.hero-btn-2 {
+    display: inline-flex;
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    top: 53%;
+    right: 22%;
+}
+
+.hero-btn-2 a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+#circle2 {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+#button-3:hover #circle2 {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+}
+
+#button-3:hover a {
     color: #2D3142;
 }
 
@@ -389,11 +464,11 @@ nav .fa {
     width: 715px;
     height: 81px;
     left: 12%;
-    top: 10.6%;
+    top: 9%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 800;
-    font-size: 60px;
+    font-size: 110px;
     line-height: 98px;
     color: #FFFFFF;
     z-index: 2;
@@ -403,12 +478,12 @@ nav .fa {
     position: absolute;
     width: 805px;
     height: 81px;
-    left: 0%;
-    top: 65%;
+    right: 3%;
+    top: 95%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 50px;
+    font-size: 33px;
     line-height: 110px;
     color: #FFFFFF;
 }
@@ -417,9 +492,9 @@ nav .fa {
     position: absolute;
     width: 805px;
     height: 81px;
-    left: 0%;
-    padding-top: 43%;
-    font-family: 'Montserrat';
+    right: 3%;
+    padding-top: 30%;
+    font-family: 'poppins';
     font-style: normal;
     font-weight: 200;
     font-size: 30px;
@@ -430,13 +505,13 @@ nav .fa {
 .nvidia-logo {
     position: absolute;
     left: 12%;
-    top: 50%;
+    top: 59%;
     z-index: 5;
 }
 
 .nvidia-container {
-    padding-top: 35%;
-    padding-right: 39.5%;
+    padding-top: 30%;
+    padding-right: 43.5%;
 }
 
 .nvidia-content {
@@ -448,6 +523,74 @@ nav .fa {
 
 .nvidia-dud {
     color: #757575;
+}
+
+
+/*Button in Nvidia page*/
+
+.hero-btn-2 {
+    display: inline-flex;
+    font-family: 'Raleway', sans-serif;
+    height: 40px;
+    width: 170px;
+    border: 2px solid #BFC0C0;
+    margin: 20px 20px 20px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    top: 53%;
+    right: 22%;
+}
+
+.hero-btn-2 a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#button-3 {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#button-3 a {
+    position: relative;
+    transition: all .45s ease-Out;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+#circle2 {
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 50%;
+    left: 50%;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+#button-3:hover #circle2 {
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+}
+
+#button-3:hover a {
+    color: #2D3142;
 }
 
 
@@ -575,7 +718,7 @@ nav .fa {
 
 .ach img {
     --b: 10px;
-    /* control the size */
+    /* control the sizeing */
     padding: var(--b);
     border: calc(2*var(--b)) solid #0000;
     outline: 1px solid #000;
@@ -594,7 +737,7 @@ nav .fa {
     width: 44%;
     height: 35%;
     left: 43%;
-    top: 13%;
+    top: 15%;
     border-radius: 39px;
     border-radius: 27px;
     background: #fffafa;
@@ -641,7 +784,7 @@ nav .fa {
 .ach_2_text {
     position: absolute;
     width: 44%;
-    height: 40%;
+    height: 40.56%;
     float: left;
     left: 13%;
     top: 61%;
@@ -656,7 +799,7 @@ nav .fa {
     width: 100%;
     height: 30%;
     left: 0%;
-    top: 20%;
+    top: 12%;
     filter: none;
 }
 
@@ -665,10 +808,10 @@ nav .fa {
     width: 100%;
     height: 30%;
     left: 0%;
-    margin-top: 55px;
+    margin-top: 35px;
     filter: none;
     padding: 8%;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .ach_2_text p {
@@ -677,6 +820,7 @@ nav .fa {
     height: 30%;
     left: 0%;
     padding: 10%;
+    font-size: 10px;
     margin-top: 100px;
     font-size: smaller;
     text-align: center;
@@ -691,9 +835,9 @@ nav .fa {
 .ach_3_text {
     position: absolute;
     width: 44%;
-    height: 38%;
+    height: 41%;
     left: 43%;
-    top: 110%;
+    top: 114%;
     border-radius: 39px;
     border-radius: 27px;
     background: #fffafa;
@@ -705,7 +849,7 @@ nav .fa {
     width: 100%;
     height: 30%;
     left: 0%;
-    top: 11%;
+    top: 20%;
     filter: none;
 }
 
@@ -714,10 +858,10 @@ nav .fa {
     width: 100%;
     height: 30%;
     left: 0%;
-    margin-top: 20px;
+    margin-top: 45px;
     filter: none;
     padding: 8%;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .ach_3_text p {
@@ -726,7 +870,7 @@ nav .fa {
     height: 30%;
     left: 0%;
     padding: 10%;
-    margin-top: 65px;
+    margin-top: 90px;
     font-size: smaller;
     text-align: center;
 }
@@ -743,7 +887,7 @@ nav .fa {
     height: 38%;
     float: left;
     left: 13%;
-    top: 163%;
+    top: 167%;
     border-radius: 39px;
     border-radius: 27px;
     background: #fffafa;
@@ -986,4 +1130,13 @@ html {
     .main-container_tab {
         min-width: 100%;
     }
+}
+
+
+/*Projects*/
+
+.mySlides {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -379,7 +379,8 @@
      font-family: inherit;
      font-weight: 500;
      line-height: 1.2;
-     color: inherit
+     color: inherit;
+     text-decoration: none;
  }
  
  .h1,
@@ -4079,7 +4080,8 @@
      flex-wrap: wrap;
      padding-left: 0;
      margin-bottom: 0;
-     list-style: none
+     list-style: none;
+     text-decoration: none
  }
  
  .nav-link {

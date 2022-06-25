@@ -1,162 +1,175 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Video Gallery, Hover Effects, Lightbox</title>
-  <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>AI Lab Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Overpass:100,300,700" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
-<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css'><link rel="stylesheet">
-<script src="https://use.fontawesome.com/88a44a09b2.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'><link rel="stylesheet" href="./gallery_css.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;display=swap'><link rel="stylesheet" href="./gallery_css.css">
-<link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'><link rel="stylesheet" href="./gallery_css.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css'>
+    <link rel="stylesheet">
+    <script src="https://use.fontawesome.com/88a44a09b2.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/magnific-popup.css'>
+    <link rel="stylesheet" href="./gallery_css.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Montserrat:wght@800&amp;display=swap'>
+    <link rel="stylesheet" href="./gallery_css.css">
+    <link rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
+    <link rel="stylesheet" href="./gallery_css.css">
 
-<style>
-  body {
-    background-image: url('kk.gif');  
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
-  }
-  </style>
+    <style>
+        body {
+            background-image: url('kk.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
 </head>
+
 <body>
-  <section>
-  <div class="bgm">
-    <nav>
-      <ul class="menuItems">
-        <li><a href='#' data-item='Home'>Home</a></li>
-        <li><a href='#' data-item='Objectives'>Objectives</a></li>
-        <li><a href='#' data-item='Achievements'>Achievements</a></li>
-        <li><a href='#' data-item='Gallery'>Gallery</a></li>
-        <li><a href='#' data-item='Projects'>Projects</a></li>
-      </ul>
-    </nav>
-  </div>
-  </section>
-  <div class="container">
-    <h2 class="title"> 
-      <span class="title-word title-word-2">THE</span>
-      <span class="title-word title-word-1">VIDEO</span>
-      <span class="title-word title-word-3">GALLERY</span>
-    </h2></div>
-  </div>
-<div class="content">
-  
-  <div class="video-gallery">
-   <div class="gallery-item"data-aos="fade-right">
-    <div class="gallery-item1 ">
-     <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier"/>
-      <div class="gallery-item-caption">
-        <!--<div>-->
-          <h2>Mount Rainier</h2>
-          <p>14410 feet of adventure</p>
-        <!--</div>-->
-        <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
-      </div>
+    <section>
+        <div class="bgm">
+            <nav>
+                <ul class="menuItems">
+                    <li><a href='#' data-item='Home'>Home</a></li>
+                    <li><a href='#' data-item='Objectives'>Objectives</a></li>
+                    <li><a href='#' data-item='Achievements'>Achievements</a></li>
+                    <li><a href='#' data-item='Gallery'>Gallery</a></li>
+                    <li><a href='#' data-item='Projects'>Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="container">
+        <h2 class="title">
+            <span class="title-word title-word-2">THE</span>
+            <span class="title-word title-word-1">VIDEO</span>
+            <span class="title-word title-word-3">GALLERY</span>
+        </h2>
     </div>
-   </div>
+    </div>
+    <div class="content">
 
-    <div class="gallery-item"data-aos="fade-left">
-      <div class="gallery-item2">
-      <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park"/>
-      <div class="gallery-item-caption">
-        <!--<div>-->
-          <h2>Olympic National Park</h2>
-          <p>Mountains, rain forests, wild coastlines</p>
-        <!--</div>-->
-        <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
-      </div>
-    </div>
-   </div>
-    
-    <div class="gallery-item"data-aos="fade-right">
-      <div class="gallery-item3">
-     <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
-      <div class="gallery-item-caption">
-        <!--<div>-->
-          <h2>North Cascades</h2>
-          <p>The mountains are calling</p>
-        <!--</div>-->
-        <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
-      </div>
-    </div>
-    </div>
+        <div class="video-gallery">
+            <div class="gallery-item" data-aos="fade-right">
+                <div class="gallery-item1 ">
+                    <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier" />
+                    <div class="gallery-item-caption">
+                        <!--<div>-->
+                        <h2>Mount Rainier</h2>
+                        <p>14410 feet of adventure</p>
+                        <!--</div>-->
+                        <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="gallery-item"data-aos="fade-left">
-      <div class="gallery-item4">
-      <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens"/>
-      <div class="gallery-item-caption">
-        <!--<div>-->
-          <h2>Mount St. Helens</h2>
-          <p>The one and only</p>
-        <!--</div>-->
-        <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
-      </div>
+            <div class="gallery-item" data-aos="fade-left">
+                <div class="gallery-item2">
+                    <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park" />
+                    <div class="gallery-item-caption">
+                        <!--<div>-->
+                        <h2>Olympic National Park</h2>
+                        <p>Mountains, rain forests, wild coastlines</p>
+                        <!--</div>-->
+                        <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-right">
+                <div class="gallery-item3">
+                    <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park" />
+                    <div class="gallery-item-caption">
+                        <!--<div>-->
+                        <h2>North Cascades</h2>
+                        <p>The mountains are calling</p>
+                        <!--</div>-->
+                        <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-left">
+                <div class="gallery-item4">
+                    <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens" />
+                    <div class="gallery-item-caption">
+                        <!--<div>-->
+                        <h2>Mount St. Helens</h2>
+                        <p>The one and only</p>
+                        <!--</div>-->
+                        <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item " data-aos="fade-right">
+                <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier" />
+                <div class="gallery-item-caption">
+                    <!--<div>-->
+                    <h2>Mount Rainier</h2>
+                    <p>14410 feet of adventure</p>
+                    <!--</div>-->
+                    <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-left">
+                <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park" />
+                <div class="gallery-item-caption">
+                    <!--<div>-->
+                    <h2>Olympic National Park</h2>
+                    <p>Mountains, rain forests, wild coastlines</p>
+                    <!--</div>-->
+                    <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-right">
+                <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park" />
+                <div class="gallery-item-caption">
+                    <!--<div>-->
+                    <h2>North Cascades</h2>
+                    <p>The mountains are calling</p>
+                    <!--</div>-->
+                    <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-aos="fade-left">
+                <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens" />
+                <div class="gallery-item-caption">
+                    <!--<div>-->
+                    <h2>Mount St. Helens</h2>
+                    <p>The one and only</p>
+                    <!--</div>-->
+                    <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
-  </div>
-
-    <div class="gallery-item "data-aos="fade-right">
-      <img src="https://assets.codepen.io/156905/rainier.jpg" alt="Mount Rainier"/>
-       <div class="gallery-item-caption">
-         <!--<div>-->
-           <h2>Mount Rainier</h2>
-           <p>14410 feet of adventure</p>
-         <!--</div>-->
-         <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
-       </div>
-     </div>
- 
-     <div class="gallery-item"data-aos="fade-left">
-       <img src="https://assets.codepen.io/156905/olympicnationalpark.jpg" alt="Olympic National Park"/>
-       <div class="gallery-item-caption">
-         <!--<div>-->
-           <h2>Olympic National Park</h2>
-           <p>Mountains, rain forests, wild coastlines</p>
-         <!--</div>-->
-         <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
-       </div>
-     </div>
-     
-     <div class="gallery-item"data-aos="fade-right">
-      <img src="https://assets.codepen.io/156905/northcascadespark.jpg" class="north-cascades-img" alt="North Cascades National Park"/>
-       <div class="gallery-item-caption">
-         <!--<div>-->
-           <h2>North Cascades</h2>
-           <p>The mountains are calling</p>
-         <!--</div>-->
-         <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
-       </div>
-     </div>
- 
-     <div class="gallery-item"data-aos="fade-left">
-       <img src="https://assets.codepen.io/156905/mountsthelens.jpg" alt="Mount St Helens"/>
-       <div class="gallery-item-caption">
-         <!--<div>-->
-           <h2>Mount St. Helens</h2>
-           <p>The one and only</p>
-         <!--</div>-->
-         <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
-       </div>
-     </div>
-    
- 
-
-  </div>
-</div>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script><script  src="./gallery_script.js"></script>
-<script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
-<script src='https://unpkg.com/gsap'></script><script  src="./gallery_script.js"></script>
-<script src='https://unpkg.com/aos@next/dist/aos.js'></script><script  src="./gallery_script.js"></script>
-<script src='https://unpkg.com/splitting/dist/splitting.js'></script>
-<script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script><script  src="./gallery_script.js"></script>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdn.rawgit.com/dimsemenov/Magnific-Popup/master/dist/jquery.magnific-popup.js'></script>
+    <script src="./gallery_script.js"></script>
+    <script src='https://unpkg.com/splitting/dist/splitting.min.js'></script>
+    <script src='https://unpkg.com/gsap'></script>
+    <script src="./gallery_script.js"></script>
+    <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+    <script src="./gallery_script.js"></script>
+    <script src='https://unpkg.com/splitting/dist/splitting.js'></script>
+    <script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script>
+    <script src="./gallery_script.js"></script>
 </body>
+
 </html>
