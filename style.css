@@ -585,6 +585,84 @@
     #button-3:hover a {
         color: #2D3142;
     }
+    /*Objectives*/
+    
+    .objectives {
+        min-height: 100vh;
+        width: 100%;
+        background-image: url(./background_3.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .objectives-text-box {
+        position: absolute;
+        width: 805.25px;
+        height: 162px;
+        left: 100px;
+        top: 50px;
+    }
+    
+    .objectives-text-box h1 {
+        position: absolute;
+        width: 532px;
+        height: 81px;
+        right: -40%;
+        top: 0%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        color: #FFFFFF;
+        z-index: 2;
+    }
+    
+    .objectives-text-box h3 {
+        top: -100%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: left;
+        position: absolute;
+        width: 80%;
+        height: 222px;
+        right: -65%;
+        top: 90%;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+    
+    .objectives-text-box h2 {
+        position: absolute;
+        width: 532px;
+        height: 81px;
+        right: -45%;
+        top: 200%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 70px;
+        color: #FFFFFF;
+        z-index: 2;
+    }
+    
+    .objectives-text-box h4 {
+        top: -100%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-align: left;
+        position: absolute;
+        width: 80%;
+        height: 222px;
+        right: -65%;
+        top: 265%;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
     /* Intel Achivements */
     
     .container {
@@ -933,7 +1011,6 @@
         padding: 40px;
         margin: 0 auto;
         overflow-x: scroll;
-        overflow-y: hidden;
         cursor: -webkit-grab;
         cursor: grab;
         margin-bottom: 10%;
@@ -1049,4 +1126,295 @@
         font-size: 35px;
         font-weight: 700;
         padding-top: 2%;
+    }
+    /* Infinity Scrolling */
+    
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
+    .docx-linking {
+        font-family: montserrat;
+        color: #fff;
+    }
+    
+    .bg-text-container {
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+        transform: skewY(-5deg);
+        z-index: -999;
+    }
+    
+    @keyframes text-scrolling {
+        0% {
+            transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+            transform: translate3d(0%, 0, 0);
+        }
+    }
+    
+    .animate-text {
+        animation: text-scrolling 20s linear infinite;
+        will-change: transform;
+        display: block;
+        position: relative;
+        white-space: nowrap;
+    }
+    
+    .animate-text.left {
+        animation-direction: reverse;
+    }
+    
+    .infinity {
+        font-size: 280px;
+        color: transparent;
+        -webkit-text-stroke: 2px #000000;
+        text-transform: uppercase;
+        display: inline-block;
+        line-height: 0.75;
+        min-width: auto;
+        font-weight: 800;
+    }
+    
+    .container {
+        padding: 30px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .container .col {
+        max-width: 600px;
+        margin: 0;
+    }
+    
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
+    .docx-linking {
+        font-family: montserrat;
+        color: #fff;
+    }
+    
+    .bg-text-container {
+        transform: translateX(-50%);
+        left: 50%;
+        position: absolute;
+        transform: skewY(-5deg);
+        z-index: -999;
+    }
+    
+    @keyframes text-scrolling {
+        0% {
+            transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+            transform: translate3d(0%, 0, 0);
+        }
+    }
+    
+    .animate-text {
+        animation: text-scrolling 20s linear infinite;
+        will-change: transform;
+        display: block;
+        position: relative;
+        white-space: nowrap;
+    }
+    
+    .animate-text.left {
+        animation-direction: reverse;
+    }
+    
+    .infinity {
+        font-size: 280px;
+        color: transparent;
+        -webkit-text-stroke: 2px #000000;
+        text-transform: uppercase;
+        display: inline-block;
+        line-height: 0.75;
+        min-width: auto;
+        font-weight: 800;
+    }
+    
+    .container {
+        padding: 30px;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .container .col {
+        max-width: 600px;
+        margin: 0;
+    }
+    /*Staff Card*/
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .staff {
+        font-family: "Dosis", sans-serif;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    /*** CARD STLES ***/
+    
+    .cards-container {
+        width: 80%;
+        max-width: 100%;
+        margin: 2rem auto;
+    }
+    
+    .card {
+        float: left;
+        margin: 3rem;
+    }
+    
+    .card-one {
+        position: relative;
+        width: 300px;
+        background: #fff;
+        box-shadow: 0 10px 7px -5px rgba(0, 0, 0, 0.4);
+    }
+    
+    .card-one header {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        background-color: #6573d0;
+    }
+    
+    .card-one header::before,
+    .card-one header::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: inherit;
+    }
+    
+    .card-one header::before {
+        transform: skewY(-8deg);
+        transform-origin: 100% 100%;
+    }
+    
+    .card-one header::after {
+        transform: skewY(8deg);
+        transform-origin: 0 100%;
+    }
+    
+    .card-one header .avatar {
+        position: absolute;
+        left: 50%;
+        top: 30px;
+        margin-left: -50px;
+        z-index: 5;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: #ccc;
+        border: 3px solid #fff;
+    }
+    
+    .card-one header .avatar img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: auto;
+    }
+    
+    .card-one h3 {
+        position: relative;
+        margin: 80px 0 30px;
+        text-align: center;
+    }
+    
+    .card-one h3::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 50%;
+        margin-left: -15px;
+        width: 30px;
+        height: 1px;
+        background: #000;
+    }
+    
+    .card-one .desc {
+        padding: 0 1rem 2rem;
+        text-align: center;
+        line-height: 1.5;
+        color: #777;
+    }
+    
+    .card-one .contacts {
+        width: 200px;
+        max-width: 100%;
+        margin: 0 auto 3rem;
+    }
+    
+    .card-one .contacts a {
+        display: block;
+        width: 33.333333%;
+        float: left;
+        text-align: center;
+        color: #6573d0;
+    }
+    
+    .card-one .contacts a:hover {
+        color: #333;
+    }
+    
+    .card-one .contacts a:hover .fa::before {
+        color: #fff;
+    }
+    
+    .card-one .contacts a:hover .fa::after {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card-one .contacts a .fa {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        line-height: 39px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    
+    .card-one .contacts a .fa:before {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .card-one .contacts a .fa::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform: translate(-50%, -50%);
+        background: #6573d0;
+        transition: width 0.3s, height 0.3s;
+    }
+    
+    .card-one .contacts a:last-of-type .fa {
+        line-height: 36px;
+    }
+    /*** RESPONSIVE ***/
+    
+    @media only screen and (max-width: 810px) {
+        .card {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
