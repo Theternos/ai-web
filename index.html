@@ -13,20 +13,22 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
     <link rel='stylesheet' href='./card.css '>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./slideshow_style.css">
     <link rel="stylesheet" type="text/css" href="./linking-card.css" />
+
 
 </head>
 
 <body>
 
-    <!----- Front Page ------>
+    <!----- Landing Page ------>
 
     <section class="navi-header" id="section1">
 
         <nav class="main-header">
             <div class="nav-img">
-                <a href="https://www.bitsathy.ac.in/">
+                <a href="https://www.bitsathy.ac.in/" target="_blank" rel="noreferrer noopener">
                     <img src="logo.png" alt="Icon" width="100px" height="100px">
                 </a>
                 <div class="clg-name1">
@@ -39,20 +41,15 @@
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li> <a href="./gallery.html">Gallery</a></li>
-                    <li> <a href="">Projects</a></li>
+                    <li> <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a></li>
+                    <li> <a href="#section3">Projects</a></li>
                     <li> <a href="">Contact US</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
         </nav>
 
-
-        <!-- particles connection 
-        <div id="large-header" class="large-header">
-            <canvas id="demo-canvas"></canvas>
-        </div> -->
-
+        <!-- Page 1 Content -->
         <!--Word Animation-->
         <div class="content">
             <div class="content__container">
@@ -441,30 +438,36 @@
 
     <!-- Slideshow -->
 
-    <section>
+    <section class="projects" id="section3">
+        <h2>Projects</h2>
+
         <div class="w3-content w3-section">
-            <img class="mySlides" src="a1.jpg" style="width:750px;height: 450px;">
-            <img class="mySlides" src="a2.jpg" style="width:750px;height:450px;">
-            <img class="mySlides" src="a3.jpg" style="width:750px;height:450px;">
+            <a href="#"><img class="mySlides" src="./1.png" style=" width:1050px;height: 550px; "></a>
+            <a href="#"><img class="mySlides " src="./2.png" style="width:1050px;height:550px; "></a>
+            <a href="#"><img class="mySlides " src="./3.png" style="width:1050px;height:550px; "></a>
+            <a href="#"><img class="mySlides" src="./4.png" style=" width:1050px;height: 550px; "></a>
+            <a href="#"><img class="mySlides " src="./5.png" style="width:1050px;height:550px; "></a>
         </div>
+        <br>
         <script>
             var myIndex = 0;
             carousel();
 
             function carousel() {
                 var i;
-                var x = document.getElementsByClassName("mySlides");
+                var x = document.getElementsByClassName("mySlides ");
                 for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+                    x[i].style.display = "none ";
                 }
                 myIndex++;
                 if (myIndex > x.length) {
                     myIndex = 1
                 }
-                x[myIndex - 1].style.display = "block";
+                x[myIndex - 1].style.display = "block ";
                 setTimeout(carousel, 2000); // Change image every 2 seconds
             }
         </script>
+
     </section>
 
     <!-- partial -->
@@ -475,7 +478,6 @@
     <!-- Sramble Text Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js "></script>
     <script src="./text_scramble_script.js "></script>
-
 
     <!-------- Javascript for Toggle Menu --------->
 
