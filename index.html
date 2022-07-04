@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./slideshow_style.css">
     <link rel="stylesheet" type="text/css" href="./linking-card.css" />
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 
 </head>
@@ -506,7 +505,7 @@
             <div class="row">
                 <div class="col-md-12 col-lg-4">
                     <div class="dk-footer-box-info">
-                        <center><img src="./blogo.png" alt="footer_logo" class="img-fluid">
+                        <center><img src="./blogo.png" width="3706" height="2411" alt="footer_logo" class="img-fluid">
                             <p class="footer-info-text">Explore more and join us @ Artificial Intelligence Laboratory - Bannari Amman Institute of Technology </p>
                             <div class="hero-btn-1" id="button-5">
                                 <div id="translate"></div>
@@ -536,11 +535,11 @@
                         <!-- End Col -->
                         <div class="col-md-6">
                             <div class="contact-us contact-us-last">
-                                <div class="contact-icon">
+                                <div class="contact-icon1">
                                     <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                                 </div>
                                 <!-- End contact Icon -->
-                                <div class="contact-info">
+                                <div class="contact-info1">
                                     <h3>+91 99520 13214</h3>
                                     <p>Give us a call</p>
                                 </div>
@@ -563,27 +562,136 @@
                             <!-- End Footer Widget -->
                         </div>
                         <!-- End col -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget">
+                                <div class="section-heading">
 
+                                </div>
+                                <ul>
+
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="./contact.html">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#projects">Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Lab Activites</a>
+                                    </li>
+                                    <li>
+                                        <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a>
+                                    </li>
+                                </ul>
+                                <!-- End form -->
+                            </div>
+                            <!-- End footer widget -->
+                        </div>
                         <!-- End Col -->
                     </div>
                     <!-- End Row -->
                 </div>
-                <!-- End Col -->
-
-                <!-- End Contact Container -->
-
-
-                <!-- End Copyright -->
-                <!-- Back to top -->
-                <div id="back-to-top" class="back-to-top">
-                    <button class="btn btn-dark" title="Back to Top" style="display: block;">
-                    <a href="#home"><i class="fa fa-angle-up"></i></a>
+                <div id="back-to-top " class="back-to-top ">
+                    <button class="btn btn-dark " title="Back to Top " style="display: block; ">
+                    <a href="#home "><i class="fa fa-angle-up "></i></a>
                 </button>
                 </div>
-                <!-- End Back to top -->
+            </div>
+        </div>
     </footer>
 
-    <!---->
+
+    <!-- Chatbot Integration -->
+
+    <script>
+        !(function() {
+
+            //#50246c
+
+            //#c394f3
+
+            let e = document.createElement("script"),
+
+                t = document.head || document.getElementsByTagName("head")[0];
+
+            (e.src =
+
+                "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+
+            // Replace 1.x.x with the version that you want
+
+            (e.async = !0),
+
+            (e.onload = () => {
+
+                window.WebChat.default(
+
+                    {
+
+                        title: 'BIT Assistant',
+
+                        subtitle: 'Powered by AI Lab',
+
+                        initPayload: '/greet',
+
+                        tooltipPayload: "/greet",
+
+                        customData: {
+                            language: "en"
+                        },
+
+                        socketUrl: "http://10.30.10.26:5005",
+
+                        profileAvatar: "assets/bit.png",
+
+                        openLauncherImage: "assets/bit.png",
+
+                        inputTextFieldHint: "Ask anything about BIT!",
+
+                        params: {
+
+                            images: {
+
+                                dims: {
+
+                                    width: 300,
+
+                                    height: 200,
+
+                                }
+
+                            },
+
+                            storage: "session"
+
+                        }
+
+                        // add other props here
+
+                    },
+
+                    null
+
+                );
+
+            }),
+
+            t.insertBefore(e, t.firstChild);
+
+        })();
+    </script>
 
 
 

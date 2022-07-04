@@ -1475,6 +1475,7 @@
     
     .footer-widget p {
         margin-bottom: 27px;
+        color: #fff;
     }
     
     .p {
@@ -1592,20 +1593,32 @@
         margin-left: 50px;
     }
     
+    .contact-info1 {
+        margin-left: 90px;
+    }
+    
     .dk-footer .contact-us.contact-us-last {
         margin-left: -80px;
     }
     
     .dk-footer .contact-icon i {
         font-size: 24px;
+        top: -3px;
+        position: relative;
+        color: #ff6f00;
+    }
+    
+    .contact-icon1 i {
+        font-size: 24px;
         top: -15px;
+        left: 10.5rem;
         position: relative;
         color: #ff6f00;
     }
     
     .dk-footer-box-info {
         position: absolute;
-        top: -40px;
+        top: -63px;
         background: #393939;
         border-radius: 20px;
         z-index: 2;
@@ -1629,7 +1642,7 @@
     
     .dk-footer-box-info .footer-social-link a i {
         display: block;
-        width: 40px;
+        width: 50%;
         height: 40px;
         border-radius: 50%;
         text-align: center;
@@ -1679,6 +1692,21 @@
     .footer-widget .section-heading {
         margin-bottom: 35px;
         color: #fff;
+        width: 100%;
+    }
+    
+    .section-heading h1 {
+        margin-left: 10px;
+    }
+    
+    .section-heading li {
+        color: #fff;
+    }
+    
+    .img-fluid {
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto
     }
     
     .footer-widget h3 {
@@ -1708,7 +1736,7 @@
     }
     
     .footer-widget a {
-        color: #878787;
+        color: #fff;
         -webkit-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
@@ -1741,7 +1769,7 @@
     .dk-footer-form input:-ms-input-placeholder,
     .dk-footer-form input::-ms-input-placeholder,
     .dk-footer-form input::-webkit-input-placeholder {
-        color: #878787;
+        color: #fff;
         font-size: 14px;
     }
     
@@ -1750,7 +1778,7 @@
     .dk-footer-form input:-ms-input-placeholder,
     .dk-footer-form input::-ms-input-placeholder,
     .dk-footer-form input::placeholder {
-        color: #878787;
+        color: #ffffff;
         font-size: 14px;
     }
     
@@ -1802,12 +1830,34 @@
         color: #ff6f00;
     }
     
+    .contact-icon1 {
+        position: absolute;
+    }
+    
+    .contact-icon1 i {
+        font-size: 36px;
+        top: -5px;
+        position: relative;
+        color: #ff6f00;
+    }
+    
     .contact-info {
         margin-left: 75px;
         color: #fff;
     }
     
     .contact-info h3 {
+        font-size: 20px;
+        color: #fff;
+        margin-bottom: 0;
+    }
+    
+    .contact-info1 {
+        margin-left: 13rem;
+        color: #fff;
+    }
+    
+    .contact-info1 h3 {
         font-size: 20px;
         color: #fff;
         margin-bottom: 0;
@@ -1821,7 +1871,7 @@
     
     .copyright span,
     .copyright a {
-        color: #878787;
+        color: #fff;
         -webkit-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
@@ -1868,4 +1918,32 @@
         background: #FA6742;
         border-color: #FA6742;
     }
-    /* Footer */
+    /* Chatbot */
+    
+    .rw-conversation-container .rw-header {
+        background-color: #50246c;
+    }
+    
+    .rw-conversation-container .rw-header .rw-title {
+        color: #ffffff;
+    }
+    
+    .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+        background-color: #f78537;
+    }
+    
+    .rw-launcher {
+        background-color: #ffffff;
+    }
+    
+    .rw-conversation-container .rw-messages-container .rw-replies .rw-reply {
+        background-color: #50246c;
+    }
+    
+    .rw-conversation-container .rw-messages-container .rw-message .rw-carousel-container .rw-carousel-card .rw-carousel-buttons-container .rw-reply {
+        background-color: #50246c;
+    }
+    
+    .rw-launcher {
+        background-color: #50246c;
+    }
