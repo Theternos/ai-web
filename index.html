@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./slideshow_style.css">
     <link rel="stylesheet" type="text/css" href="./linking-card.css" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 
 </head>
@@ -26,7 +27,7 @@
 
     <!----- Landing Page ------>
 
-    <section class="navi-header" id="section1">
+    <section class="navi-header" id="home">
 
         <nav class="main-header">
             <div class="nav-img">
@@ -44,9 +45,10 @@
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li> <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a></li>
-                    <li> <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Lab Activities</a></li>
-                    <li> <a href="#section3">Projects</a></li>
-                    <li> <a href="">Contact US</a></li>
+                    <li> <a href="http://aiclub1.s3-website.ap-south-1.amazonaws.com/courses.html" target="_blank" rel="noreferrer noopener">Online Resources</a></li>
+                    <li> <a href="#projects">Projects</a></li>
+                    <li><a href="#qwerty">Sample</a></li>
+                    <li> <a href="./contact.html">Contact US</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showmenu()"></i>
@@ -75,7 +77,11 @@
             <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
             <div class="hero-btn-1" id="button-5">
                 <div id="translate"></div>
-                <a href="#section2">LETS'S GO!</a>
+                <a href="#nvidia">LETS'S GO!</a>
+            </div>
+            <div class="hero-btn-1" id="button-5">
+                <div id="translate"></div>
+                <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">LAB ACTIVITIES</a>
             </div>
         </div>
     </section>
@@ -83,7 +89,7 @@
 
     <!--Page 2 Nvidia Certification Page-->
 
-    <section class="nvidia" id="section2">
+    <section class="nvidia" id="nvidia">
         <div class="nvidia-text-box">
             <a href="https://www.nvidia.com/en-in/training/" class="nvidia-logo" target="_blank" rel="noreferrer noopener">
                 <img src="./nvidia-logo.png" alt="Nvidia Logo" width="140px" height="90px">
@@ -403,7 +409,7 @@
 
     <!-- Linking Cards -->
 
-    <section class="pricing-section bg-11">
+    <section class="pricing-section bg-11" id="qwerty">
         <section class="docx-linking">
 
             <div class="pricing pricing--tenzin">
@@ -460,7 +466,7 @@
 
     <!-- Slideshow -->
 
-    <section class="projects" id="section3">
+    <section class="projects" id="projects">
         <h2>Projects</h2>
 
         <div class="w3-content w3-section">
@@ -492,134 +498,94 @@
 
     </section>
 
-    <!-- Staff Card -->
-    <section class="staff">
-        <center>
-            <h1>Vertical-1</h1>
-        </center>
 
-        <div class="cards-container">
+    <!--Get in Touch-->
 
-            <div class="card card-one">
-                <header>
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
+    <footer id="dk-footer" class="dk-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-4">
+                    <div class="dk-footer-box-info">
+                        <center><img src="./blogo.png" alt="footer_logo" class="img-fluid">
+                            <p class="footer-info-text">Explore more and join us @ Artificial Intelligence Laboratory - Bannari Amman Institute of Technology </p>
+                            <div class="hero-btn-1" id="button-5">
+                                <div id="translate"></div>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYpG6o--RMWvjwGBJZneJLd97t5Sb0N5XsbD5xQybGdotAbg/viewform" target="_blank" rel="noreferrer noopener">JOIN US</a>
+                            </div>
+                        </center>
                     </div>
-                </header>
 
-                <h3>Jhon Doe</h3>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
                 </div>
-                <div class="contacts">
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="card card-one">
-                <header>
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
+                <!-- End Col -->
+                <div class="col-md-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-us">
+                                <div class="contact-icon">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>Contact</h3>
+                                    <p>P. Purusothaman</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
+                        <div class="col-md-6">
+                            <div class="contact-us contact-us-last">
+                                <div class="contact-icon">
+                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                </div>
+                                <!-- End contact Icon -->
+                                <div class="contact-info">
+                                    <h3>+91 99520 13214</h3>
+                                    <p>Give us a call</p>
+                                </div>
+                                <!-- End Contact Info -->
+                            </div>
+                            <!-- End Contact Us -->
+                        </div>
+                        <!-- End Col -->
                     </div>
-                </header>
+                    <!-- End Contact Row -->
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer-widget footer-left-widget">
+                                <div class="section-heading">
+                                    <h1>Incharge:</h1>
+                                    <br>
+                                    <p>Artificial Intelligence Laboratory, Bannari Amman Institute of Technology, Alathukombai - Post, Sathyamangalam, Erode District, Tamil Nadu - 638 401 </p>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <!-- End col -->
 
-                <h3>Jhon Doe</h3>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
-                </div>
-                <div class="contacts">
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="card card-one">
-                <header>
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
+                        <!-- End Col -->
                     </div>
-                </header>
-
-                <h3>Jhon Doe</h3>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
+                    <!-- End Row -->
                 </div>
-                <div class="contacts">
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
-                    <div class="clear"></div>
-                </div>
-            </div>
+                <!-- End Col -->
 
-            <div class="clear"></div>
-        </div>
+                <!-- End Contact Container -->
 
-        <center>
-            <h1>Vertical-2</h1>
-        </center>
 
-        <div class="cards-container">
+                <!-- End Copyright -->
+                <!-- Back to top -->
+                <div id="back-to-top" class="back-to-top">
+                    <button class="btn btn-dark" title="Back to Top" style="display: block;">
+                    <a href="#home"><i class="fa fa-angle-up"></i></a>
+                </button>
+                </div>
+                <!-- End Back to top -->
+    </footer>
 
-            <div class="card card-one">
-                <header>
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
-                    </div>
-                </header>
+    <!---->
 
-                <h3>Jhon Doe</h3>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
-                </div>
-                <div class="contacts">
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="card card-one">
-                <header>
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
-                    </div>
-                </header>
 
-                <h3>Jhon Doe</h3>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
-                </div>
-                <div class="contacts">
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="card card-one">
-                <header>
-                    <div class="avatar">
-                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jhon Doe" />
-                    </div>
-                </header>
-
-                <h3>Jhon Doe</h3>
-                <div class="desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit et cupiditate deleniti.
-                </div>
-                <div class="contacts">
-                    <a href=""><i class="fa fa-phone"></i></a>
-                    <a href=""><i class="fa fa-whatsapp"></i></a>
-                    <a href=""><i class="fa fa-envelope"></i></a>
-                    <div class="clear"></div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js '></script>
