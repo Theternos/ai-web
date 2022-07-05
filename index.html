@@ -18,599 +18,673 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./slideshow_style.css">
     <link rel="stylesheet" type="text/css" href="./linking-card.css" />
-
-
+    <style>
+        #loader {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            z-index: 1;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #0000ff;
+            border-bottom: 16px solid blue;
+            width: 120px;
+            height: 120px;
+            margin: -76px 0 0 -76px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        /* Add animation to "page content" */
+        
+        .animate-bottom {
+            position: relative;
+            -webkit-animation-name: animatebottom;
+            -webkit-animation-duration: 1s;
+            animation-name: animatebottom;
+            animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0px;
+                opacity: 1
+            }
+        }
+        
+        @keyframes animatebottom {
+            from {
+                bottom: -100px;
+                opacity: 0
+            }
+            to {
+                bottom: 0;
+                opacity: 1
+            }
+        }
+        
+        #myDiv {
+            display: none;
+            text-align: center;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader"></div>
 
-    <!----- Landing Page ------>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!----- Landing Page ------>
+        <section class="navi-header" id="home">
 
-    <section class="navi-header" id="home">
-
-        <nav class="main-header">
-            <div class="nav-img">
-                <a href="https://www.bitsathy.ac.in/" target="_blank" rel="noreferrer noopener">
-                    <img src="logo.png" alt="Icon" width="100px" height="100px">
-                </a>
-                <div class="clg-name1">
-                    Bannari Amman Institute of Technology
-                </div>
-                <div class="clg-name2">BIT</div>
-            </div>
-
-            <div class="main-nav" id="navlinks">
-                <i class="fa fa-times" onclick="hidemenu()"></i>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li> <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a></li>
-                    <li> <a href="http://aiclub1.s3-website.ap-south-1.amazonaws.com/courses.html" target="_blank" rel="noreferrer noopener">Online Resources</a></li>
-                    <li> <a href="#projects">Projects</a></li>
-                    <li><a href="#qwerty">Sample</a></li>
-                    <li> <a href="./contact.html">Contact US</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showmenu()"></i>
-        </nav>
-
-        <!-- Page 1 Content -->
-        <!--Word Animation-->
-        <div class="content">
-            <div class="content__container">
-                <p class="content__container__text">
-                    Hello
-                </p>
-
-                <ul class="content__container__list">
-                    <li class="content__container__list__item">world !</li>
-                    <li class="content__container__list__item">future !</li>
-                    <li class="content__container__list__item">users !</li>
-                    <li class="content__container__list__item">there !</li>
-                </ul>
-            </div>
-        </div>
-
-        <!--Content-->
-        <div class="text-box">
-            <h2>Artificial Intelligence Special Laboratory</h2><br>
-            <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
-            <div class="hero-btn-1" id="button-5">
-                <div id="translate"></div>
-                <a href="#nvidia">LETS'S GO!</a>
-            </div>
-            <div class="hero-btn-1" id="button-5">
-                <div id="translate"></div>
-                <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">LAB ACTIVITIES</a>
-            </div>
-        </div>
-    </section>
-
-
-    <!--Page 2 Nvidia Certification Page-->
-
-    <section class="nvidia" id="nvidia">
-        <div class="nvidia-text-box">
-            <a href="https://www.nvidia.com/en-in/training/" class="nvidia-logo" target="_blank" rel="noreferrer noopener">
-                <img src="./nvidia-logo.png" alt="Nvidia Logo" width="140px" height="90px">
-            </a>
-            <h1>NVIDIA</h1>
-            <h3>Certified Deep Learning Institute</h3>
-            <h2>Here are some online courses for you </h2>
-
-        </div>
-        <div class="hero-btn-2" id="button-3">
-            <div id="circle2"></div>
-            <a href="https://www.nvidia.com/en-in/training/online/" target="_blank" rel="noreferrer noopener">Courses Offered!</a>
-        </div>
-        <!-- Content Animaion in Page 2-->
-        <div class="nvidia-container">
-            <div class="nvidia-content">
-            </div>
-        </div>
-    </section>
-
-    <!-- Page 3 Objectives-->
-
-    <section class="objectives">
-        <div class="objectives-text-box">
-            <h1>OBJECTIVES</h1>
-            <h3>To provide Technical training to students in the focus areas of AI.<br>Motivate and guide students to participate in competitions.<br>To take up industry defined problems and provide solutions.</h3>
-            <h2>FOCUS AREAS</h2>
-            <h4>Machine Learning.<br>Deep Learning.<br>Natural Language Processing.</h4>
-        </div>
-    </section>
-
-
-    <!-- Intel Achievements-->
-
-    <section>
-        <h1>Achievements</h1>
-        <br>
-        <h6>These are 4 AI Lab students who topped in Intel AI Developer International Challenge Contest 2018</h6>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="our-team">
-
-                        <div class="picture">
-                            <img class="img-fluid" src="./ach1.jpeg" alt="Image Of Gowtham R">
-                        </div>
-                        <div class=" team-content ">
-                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
-                            <h3 class="name ">Gowtham R</h3>
-                            <h4 class="title ">EEE</h4>
-                        </div>
-                        <ul class="social ">
-                            <li>
-                                <a>First Place [ 100 Marks ] </a>
-                            </li>
-                        </ul>
+            <nav class="main-header">
+                <div class="nav-img">
+                    <a href="https://www.bitsathy.ac.in/" target="_blank" rel="noreferrer noopener">
+                        <img src="logo.png" alt="Icon" width="100px" height="100px">
+                    </a>
+                    <div class="clg-name1">
+                        Bannari Amman Institute of Technology
                     </div>
+                    <div class="clg-name2">BIT</div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="our-team ">
-                        <div class="picture ">
-                            <img class="img-fluid " src="./ach2.jpeg" alt="Image Of Ramya E">
-                        </div>
-                        <div class="team-content ">
-                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
-                            <h3 class="name ">Ramya E</h3>
-                            <h4 class="title ">ECE</h4>
-                        </div>
-                        <ul class="social ">
-                            <li>
-                                <a>Second Place [ 96 Marks ] </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="our-team ">
-                        <div class="picture ">
-                            <img class="img-fluid " src="./ach3.jpeg" alt="Image Of Rakeshkumar P">
-                        </div>
-                        <div class="team-content ">
-                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
-                            <h3 class="name ">Rakeshkumar P</h3>
-                            <h4 class="title ">Aero</h4>
-                        </div>
-                        <ul class="social ">
-                            <li>
-                                <a>Fourth Place [ 96 Marks ] </a>
-                            </li>
 
-                        </ul>
-                    </div>
+                <div class="main-nav" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li> <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a></li>
+                        <li> <a href="http://aiclub1.s3-website.ap-south-1.amazonaws.com/courses.html" target="_blank" rel="noreferrer noopener">Online Resources</a></li>
+                        <li> <a href="#projects">Projects</a></li>
+                        <li><a href="#qwerty">Sample</a></li>
+                        <li> <a href="./contact.html">Contact US</a></li>
+                    </ul>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-                    <div class="our-team ">
-                        <div class="picture ">
-                            <img class="img-fluid " src="./ach4.jpeg" alt="Image Of Niraimathi P">
-                        </div>
-                        <div class="team-content ">
-                            <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
-                            <h3 class="name ">Niraimathi P</h3>
-                            <h4 class="title ">IT</h4>
-                        </div>
-                        <ul class="social ">
-                            <li>
-                                <a>Fifth Place [ 96 Marks ] </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
 
-
-    <!-- Achievements Group Activity-->
-
-    <section>
-        <div class="blog-card">
-            <div class="meta">
-                <div class="photo"><img src="./achivement_1.jpg" alt="IET Hackathon Winner's Photo" height="220px" width="300px"></div>
-            </div>
-            <div class="description">
-                <h1>IET HACKATHON WINNERS</h1>
-                <h2>Artificial Intelligence @ BIT</h2>
-                <p> Students from AI lab of BIT participated in IET Hackathon and won the FIRST prize.</p>
-            </div>
-        </div>
-        <div class="blog-card alt">
-            <div class="meta">
-                <div class="photo"><img src="./achivement_2.jpg" alt="ML-Apps 2019 Winner's Photo" height="230px" width="300px"></div>
-            </div>
-            <div class="description">
-                <h1>ML-APPS 2K19 WINNERS</h1>
-                <h2>Artificial Intelligence @ BIT</h2>
-                <p>Students from AI lab of BIT participated in ML-Apps 2k19 Hackathon conducted by KCG college of Technology and won the SECOND prize.</p>
-            </div>
-        </div>
-        <div class="blog-card">
-            <div class="meta">
-                <div class="photo"><img src="./achivement_3.jpg" alt="MKCE Hackthon Winner's Photo" height="220px" width="300px"></div>
-            </div>
-            <div class="description">
-                <h1>MKCE HACKATHON WINNERS</h1>
-                <h2>Artificial Intelligence @ BIT</h2>
-                <p> Students from AI lab of BIT participated in MKCE Hackathon and won the THIRD prize.</p>
-            </div>
-        </div>
-        <div class="blog-card alt">
-            <div class="meta">
-                <div class="photo"><img src="./achivement_4.jpg" alt="Surge 2019 winner's Photo" height="205px" width="280px"></div>
-            </div>
-            <div class="description">
-                <h1>SURGE 2K19 WINNERS</h1>
-                <h2>Artificial Intelligence @ BIT</h2>
-                <p>Students from AI lab of BIT participated in SURGE 2k19 and won the THIRD prize.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <!--Participations Sliders-->
-
-    <section class="part_sliders">
-        <h1>PARTICIPATIONS</h1>
-
-        <div class="main-container ">
-
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>TCS HumAIn contest 2019</span>
-                    </div><br>
-                    <h3 class="main-container_tab_title ">TCS HUMAIN</h3>
-
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>18</b> Shortlisted out of 200 for Round 2. <b>3</b> Shortlisted to Round 3.</p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>SSN College of Engineering,</span>
-                    </div><br>
-                    <h3 class="main-container_tab_title ">VIVID '19</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-
-                    <p class="main-container_tab_author "><b>4 Projects</b> from Artificial Intelligence Laboratory 16th March 2019 </p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>M. Kumarasamy College of Engineering</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">MKCE HACKATHON</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-
-                    <p class="main-container_tab_author ">
-                        <b>2 Teams</b> Rhagul, Sachin Kumar K V, Saravanan - <b>Camera Based Attendance System.</b>
-                        <br>Mohammed Aakibali, Karthick , Praveen Kumar - <b>People Counter.</b></p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>Dr. Ambhedkar Technical University,
-                            Bangalore</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">NATIONAL LEVEL PROJECT EXHIBITION</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author ">
-                        <b>Participants</b> Mohammed Aakibali, Karthick , Praveen Kumar, Saravanan</p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>Sri Eshwar College of Engineering, Coimbatore</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">INDUSTRY CONNECT 2019</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>Team Members: </b>Rhagul, Saravanan, SachinKumar K V
-                        <b> Project Expo</b></p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>PSG Tech</span>
-                    </div><br>
-                    <h3 class="main-container_tab_title ">SHRISHTI 2K19</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>Artificial Intelligence</b> students have topped in top 10 position in the Symposium</p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>Vellore Institute of Technology</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">YES BANK HACKATHON</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>Students: </b>Dhanraj V, Preethika S, Arsha A are Shortlisted for <b>Intern</b> @Capgemini Machine Learning Analytics Team</p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>American Express</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">AMEX MACHINE LEARNING CHALLENGE
-                    </h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>Team1: </b>Barath Nithish, Aathish, Pavithran <b>Team2: </b>Abishek, Promoth, Meganathan <b>Team3: </b>Srithaladevi, Swetha, Madhumitha</p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>IIT Madras</span>
-                    </div><br>
-                    <h3 class="main-container_tab_title ">SHAASTRA</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>Name: </b>Premmaran, Bharath, Nithish, Aathish, Pavithran. <b>Title: </b> “Courier Prediction using Machine Learning Classification Algorithm”</p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span></span>
-                    </div><br>
-                    <h3 class="main-container_tab_title ">L&T TECHGIUM</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author "><b>Name: </b>Premmaran, Nandhakumar, Malini, Prakathi.
-                        <br><b>Classification of Unstructured data</b>
+            <!-- Page 1 Content -->
+            <!--Word Animation-->
+            <div class="content">
+                <div class="content__container">
+                    <p class="content__container__text">
+                        Hello
                     </p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>Bennett University</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">BENNETT UNIVERSITY</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author ">
-                        <b>Name</b> Ravi Shankar Mishra IInd Year,CSE Offered an <b>Internship</b>@ Bennett University, Delhi for his active work under
-                        <b>Machine Learning</b></p>
-                </div>
-            </div>
-            <div class="main-container_tab ">
-                <div class="main-container_tab_datetitle ">
-                    <div class="main-container_tab_date ">
-                        <span>Microsoft Corporation India Pvt. Ltd</span>
-                    </div>
-                    <h3 class="main-container_tab_title ">NTT DATA HACKATHON</h3>
-                </div>
-                <div class="main-container_tab_photoauthor ">
-                    <p class="main-container_tab_author ">100+ students have successfully cleared the Hackthon with good results <br><b>International HACKATHON</b></p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-
-    <!-- Linking Cards -->
-
-    <section class="pricing-section bg-11" id="qwerty">
-        <section class="docx-linking">
-
-            <div class="pricing pricing--tenzin">
-                <div class="pricing__item">
-                    <h3 class="pricing__title">List of</h3>
-                    <div class="pricing__price"><span class="pricing__currency"></span>Patent<br> Filed</div>
-                    <p class="pricing__sentence">These are the Patent filed by our AI Lab students from Bannari Amman Institute of Technology.</p>
-                    <button class="pricing__action"><a href="https://docs.google.com/document/d/1JDv11uRe4_W0ZIpKJqP2nS0Yfak08_9Y7hLlMm_6exc/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Know More!</a></button>
-                </div>
-                <div class="pricing__item">
-                    <h3 class="pricing__title">Special Lab</h3>
-                    <div class="pricing__price"><span class="pricing__currency"></span>Competition Status</div>
-                    <p class="pricing__sentence">By clicking here you can be knowing the Competition Status of students.</p>
-                    <button class="pricing__action"><a href="https://docs.google.com/spreadsheets/d/1DKv9NL4gPJDG_LAiBBISe297eDKi_AzC/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
-                </div>
-                <div class="pricing__item">
-                    <h3 class="pricing__title">AI Lab</h3>
-                    <div class="pricing__price"><span class="pricing__currency"></span>Consultancy Details</div>
-                    <p class="pricing__sentence">Click the button below to know the Consultancy details of the AI Lab.</p>
-                    <button class="pricing__action"><a href="https://docs.google.com/document/d/11TYPEnT5AqptAU7PhAOUslF2C86l1uLg/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                    <ul class="content__container__list">
+                        <li class="content__container__list__item">world !</li>
+                        <li class="content__container__list__item">future !</li>
+                        <li class="content__container__list__item">users !</li>
+                        <li class="content__container__list__item">there !</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="pricing pricing--tenzin">
-                <div class="pricing__item">
-                    <h3 class="pricing__title">AI Lab</h3>
-                    <div class="pricing__price"><span class="pricing__currency"></span>Funding<br>Details</div>
-                    <p class="pricing__sentence">By Click below you can know the funding details of AI Lab by Industries.</p>
-                    <button class="pricing__action"><a href="https://docs.google.com/document/d/1iZSnTPAmcKYFiRYXQa6FcP1fuazaxllT/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank"
-                    rel="noreferrer noopener">Know More!</a></button>
+            <!--Content-->
+            <div class="text-box">
+                <h2>Artificial Intelligence Special Laboratory</h2><br>
+                <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think like humans and mimic their actions.</p>
+                <div class="hero-btn-1" id="button-5">
+                    <div id="translate"></div>
+                    <a href="#nvidia">LETS'S GO!</a>
                 </div>
-                <div class="pricing__item">
-                    <h3 class="pricing__title">NVIDIA</h3>
-                    <div class="pricing__price"><span class="pricing__currency"></span>Certification Completed List</div>
-                    <p class="pricing__sentence">Click the below button to view the Certification Completed List from AI Lab.</p>
-                    <button class="pricing__action"><a href="https://docs.google.com/document/d/1WHvBlSOENbwrg26AI7bd8HM4Q40U3ji6GB8eR6J34f0/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Know More!</a></button>
-                </div>
-                <div class="pricing__item">
-                    <h3 class="pricing__title">AI Lab</h3>
-                    <div class="pricing__price"><span class="pricing__currency"></span>Industry Sponsorship</div>
-                    <p class="pricing__sentence">This is the information about the Industry Sponsorship to our AI Lab.</p>
-                    <button class="pricing__action"><a href="https://docs.google.com/document/d/11tU0T4gGnqXlpI8tQhWQ2VHMjixeyRIM/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                <div class="hero-btn-1" id="button-5">
+                    <div id="translate"></div>
+                    <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">LAB ACTIVITIES</a>
                 </div>
             </div>
         </section>
-        <script>
-            let parent = document.querySelectorAll('.animate-text');
-            for (let i = 0; i < parent.length; i++) {
-                parent[i].style.width = parent[i].children[0].clientWidth + "px";
-            };
-        </script>
-    </section>
 
 
-    <!-- Slideshow -->
+        <!--Page 2 Nvidia Certification Page-->
 
-    <section class="projects" id="projects">
-        <h2>Projects</h2>
+        <section class="nvidia" id="nvidia">
+            <div class="nvidia-text-box">
+                <a href="https://www.nvidia.com/en-in/training/" class="nvidia-logo" target="_blank" rel="noreferrer noopener">
+                    <img src="./nvidia-logo.png" alt="Nvidia Logo" width="140px" height="90px">
+                </a>
+                <h1>NVIDIA</h1>
+                <h3>Certified Deep Learning Institute</h3>
+                <h2>Here are some online courses for you </h2>
 
-        <div class="w3-content w3-section">
-            <a href="#"><img class="mySlides" src="./1.png" style=" width:900px;height: 450px; "></a>
-            <a href="#"><img class="mySlides " src="./2.png" style="width:900px;height:450px; "></a>
-            <a href="#"><img class="mySlides " src="./3.png" style="width:900px;height:450px; "></a>
-            <a href="#"><img class="mySlides" src="./4.png" style=" width:900px;height: 450px; "></a>
-            <a href="#"><img class="mySlides " src="./5.png" style="width:900px;height:450px; "></a>
-        </div>
-        <br>
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides ");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none ";
-                }
-                myIndex++;
-                if (myIndex > x.length) {
-                    myIndex = 1
-                }
-                x[myIndex - 1].style.display = "block ";
-                setTimeout(carousel, 4000); // Change image every 4 seconds
-            }
-        </script>
-
-    </section>
-
-
-    <!--Get in Touch-->
-
-    <footer id="dk-footer" class="dk-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <div class="dk-footer-box-info">
-                        <center><img src="./blogo.png" width="3706" height="2411" alt="footer_logo" class="img-fluid">
-                            <p class="footer-info-text">Explore more and join us @ Artificial Intelligence Laboratory - Bannari Amman Institute of Technology </p>
-                            <div class="hero-btn-1" id="button-5">
-                                <div id="translate"></div>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYpG6o--RMWvjwGBJZneJLd97t5Sb0N5XsbD5xQybGdotAbg/viewform" target="_blank" rel="noreferrer noopener">JOIN US</a>
-                            </div>
-                        </center>
-                    </div>
-
-                </div>
-                <!-- End Col -->
-                <div class="col-md-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-us">
-                                <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>Contact</h3>
-                                    <p>P. Purusothaman</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                        <div class="col-md-6">
-                            <div class="contact-us contact-us-last">
-                                <div class="contact-icon1">
-                                    <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info1">
-                                    <h3>+91 99520 13214</h3>
-                                    <p>Give us a call</p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Contact Row -->
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget footer-left-widget">
-                                <div class="section-heading">
-                                    <h1>Incharge:</h1>
-                                    <br>
-                                    <p>Artificial Intelligence Laboratory, Bannari Amman Institute of Technology, Alathukombai - Post, Sathyamangalam, Erode District, Tamil Nadu - 638 401 </p>
-                                </div>
-                            </div>
-                            <!-- End Footer Widget -->
-                        </div>
-                        <!-- End col -->
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget">
-                                <div class="section-heading">
-
-                                </div>
-                                <ul>
-
-                                    <li>
-                                    </li>
-                                    <li>
-                                    </li>
-                                    <li>
-                                    </li>
-                                    <li>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <a href="./contact.html">Contact us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="#projects">Projects</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Lab Activites</a>
-                                    </li>
-                                    <li>
-                                        <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a>
-                                    </li>
-                                </ul>
-                                <!-- End form -->
-                            </div>
-                            <!-- End footer widget -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Row -->
-                </div>
-                <div id="back-to-top " class="back-to-top ">
-                    <button class="btn btn-dark " title="Back to Top " style="display: block; ">
-                    <a href="#home "><i class="fa fa-angle-up "></i></a>
-                </button>
+            </div>
+            <div class="hero-btn-2" id="button-3">
+                <div id="circle2"></div>
+                <a href="https://www.nvidia.com/en-in/training/online/" target="_blank" rel="noreferrer noopener">Courses Offered!</a>
+            </div>
+            <!-- Content Animaion in Page 2-->
+            <div class="nvidia-container">
+                <div class="nvidia-content">
                 </div>
             </div>
-        </div>
-    </footer>
+        </section>
+
+        <!-- Page 3 Objectives-->
+
+        <section class="objectives">
+            <div class="objectives-text-box">
+                <h1>OBJECTIVES</h1>
+                <h3>To provide Technical training to students in the focus areas of AI.<br>Motivate and guide students to participate in competitions.<br>To take up industry defined problems and provide solutions.</h3>
+                <h2>FOCUS AREAS</h2>
+                <h4>Machine Learning.<br>Deep Learning.<br>Natural Language Processing.</h4>
+            </div>
+        </section>
+
+
+        <!-- Intel Achievements-->
+
+        <section>
+            <h1>Achievements</h1>
+            <br>
+            <h6>These are 4 AI Lab students who topped in Intel AI Developer International Challenge Contest 2018</h6>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="our-team">
+
+                            <div class="picture">
+                                <img class="img-fluid" src="./ach1.jpeg" alt="Image Of Gowtham R">
+                            </div>
+                            <div class=" team-content ">
+                                <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
+                                <h3 class="name ">Gowtham R</h3>
+                                <h4 class="title ">EEE</h4>
+                            </div>
+                            <ul class="social ">
+                                <li>
+                                    <a>First Place [ 100 Marks ] </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="our-team ">
+                            <div class="picture ">
+                                <img class="img-fluid " src="./ach2.jpeg" alt="Image Of Ramya E">
+                            </div>
+                            <div class="team-content ">
+                                <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
+                                <h3 class="name ">Ramya E</h3>
+                                <h4 class="title ">ECE</h4>
+                            </div>
+                            <ul class="social ">
+                                <li>
+                                    <a>Second Place [ 96 Marks ] </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="our-team ">
+                            <div class="picture ">
+                                <img class="img-fluid " src="./ach3.jpeg" alt="Image Of Rakeshkumar P">
+                            </div>
+                            <div class="team-content ">
+                                <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
+                                <h3 class="name ">Rakeshkumar P</h3>
+                                <h4 class="title ">Aero</h4>
+                            </div>
+                            <ul class="social ">
+                                <li>
+                                    <a>Fourth Place [ 96 Marks ] </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+                        <div class="our-team ">
+                            <div class="picture ">
+                                <img class="img-fluid " src="./ach4.jpeg" alt="Image Of Niraimathi P">
+                            </div>
+                            <div class="team-content ">
+                                <a href="https://devchallenge.intel.com/na_30_start"><img src="./intel-logo.png" alt="Intel Logo" height="50px" width="83px"></a>
+                                <h3 class="name ">Niraimathi P</h3>
+                                <h4 class="title ">IT</h4>
+                            </div>
+                            <ul class="social ">
+                                <li>
+                                    <a>Fifth Place [ 96 Marks ] </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Achievements Group Activity-->
+
+        <section>
+            <div class="blog-card">
+                <div class="meta">
+                    <div class="photo"><img src="./achivement_1.jpg" alt="IET Hackathon Winner's Photo" height="220px" width="300px"></div>
+                </div>
+                <div class="description">
+                    <h1>IET HACKATHON WINNERS</h1>
+                    <h2>Artificial Intelligence @ BIT</h2>
+                    <p> Students from AI lab of BIT participated in IET Hackathon and won the FIRST prize.</p>
+                </div>
+            </div>
+            <div class="blog-card alt">
+                <div class="meta">
+                    <div class="photo"><img src="./achivement_2.jpg" alt="ML-Apps 2019 Winner's Photo" height="230px" width="300px"></div>
+                </div>
+                <div class="description">
+                    <h1>ML-APPS 2K19 WINNERS</h1>
+                    <h2>Artificial Intelligence @ BIT</h2>
+                    <p>Students from AI lab of BIT participated in ML-Apps 2k19 Hackathon conducted by KCG college of Technology and won the SECOND prize.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="meta">
+                    <div class="photo"><img src="./achivement_3.jpg" alt="MKCE Hackthon Winner's Photo" height="220px" width="300px"></div>
+                </div>
+                <div class="description">
+                    <h1>MKCE HACKATHON WINNERS</h1>
+                    <h2>Artificial Intelligence @ BIT</h2>
+                    <p> Students from AI lab of BIT participated in MKCE Hackathon and won the THIRD prize.</p>
+                </div>
+            </div>
+            <div class="blog-card alt">
+                <div class="meta">
+                    <div class="photo"><img src="./achivement_4.jpg" alt="Surge 2019 winner's Photo" height="205px" width="280px"></div>
+                </div>
+                <div class="description">
+                    <h1>SURGE 2K19 WINNERS</h1>
+                    <h2>Artificial Intelligence @ BIT</h2>
+                    <p>Students from AI lab of BIT participated in SURGE 2k19 and won the THIRD prize.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Participations Sliders-->
+
+        <section class="part_sliders">
+            <h1>PARTICIPATIONS</h1>
+
+            <div class="main-container ">
+
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>TCS HumAIn contest 2019</span>
+                        </div><br>
+                        <h3 class="main-container_tab_title ">TCS HUMAIN</h3>
+
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>18</b> Shortlisted out of 200 for Round 2. <b>3</b> Shortlisted to Round 3.</p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>SSN College of Engineering,</span>
+                        </div><br>
+                        <h3 class="main-container_tab_title ">VIVID '19</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+
+                        <p class="main-container_tab_author "><b>4 Projects</b> from Artificial Intelligence Laboratory 16th March 2019 </p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>M. Kumarasamy College of Engineering</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">MKCE HACKATHON</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+
+                        <p class="main-container_tab_author ">
+                            <b>2 Teams</b> Rhagul, Sachin Kumar K V, Saravanan - <b>Camera Based Attendance System.</b>
+                            <br>Mohammed Aakibali, Karthick , Praveen Kumar - <b>People Counter.</b></p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>Dr. Ambhedkar Technical University,
+                                Bangalore</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">NATIONAL LEVEL PROJECT EXHIBITION</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author ">
+                            <b>Participants</b> Mohammed Aakibali, Karthick , Praveen Kumar, Saravanan</p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>Sri Eshwar College of Engineering, Coimbatore</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">INDUSTRY CONNECT 2019</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>Team Members: </b>Rhagul, Saravanan, SachinKumar K V
+                            <b> Project Expo</b></p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>PSG Tech</span>
+                        </div><br>
+                        <h3 class="main-container_tab_title ">SHRISHTI 2K19</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>Artificial Intelligence</b> students have topped in top 10 position in the Symposium</p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>Vellore Institute of Technology</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">YES BANK HACKATHON</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>Students: </b>Dhanraj V, Preethika S, Arsha A are Shortlisted for <b>Intern</b> @Capgemini Machine Learning Analytics Team</p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>American Express</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">AMEX MACHINE LEARNING CHALLENGE
+                        </h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>Team1: </b>Barath Nithish, Aathish, Pavithran <b>Team2: </b>Abishek, Promoth, Meganathan <b>Team3: </b>Srithaladevi, Swetha, Madhumitha</p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>IIT Madras</span>
+                        </div><br>
+                        <h3 class="main-container_tab_title ">SHAASTRA</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>Name: </b>Premmaran, Bharath, Nithish, Aathish, Pavithran. <b>Title: </b> “Courier Prediction using Machine Learning Classification Algorithm”</p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span></span>
+                        </div><br>
+                        <h3 class="main-container_tab_title ">L&T TECHGIUM</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author "><b>Name: </b>Premmaran, Nandhakumar, Malini, Prakathi.
+                            <br><b>Classification of Unstructured data</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>Bennett University</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">BENNETT UNIVERSITY</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author ">
+                            <b>Name</b> Ravi Shankar Mishra IInd Year,CSE Offered an <b>Internship</b>@ Bennett University, Delhi for his active work under
+                            <b>Machine Learning</b></p>
+                    </div>
+                </div>
+                <div class="main-container_tab ">
+                    <div class="main-container_tab_datetitle ">
+                        <div class="main-container_tab_date ">
+                            <span>Microsoft Corporation India Pvt. Ltd</span>
+                        </div>
+                        <h3 class="main-container_tab_title ">NTT DATA HACKATHON</h3>
+                    </div>
+                    <div class="main-container_tab_photoauthor ">
+                        <p class="main-container_tab_author ">100+ students have successfully cleared the Hackthon with good results <br><b>International HACKATHON</b></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Linking Cards -->
+
+        <section class="pricing-section bg-11" id="qwerty">
+            <section class="docx-linking">
+
+                <div class="pricing pricing--tenzin">
+                    <div class="pricing__item">
+                        <h3 class="pricing__title">List of</h3>
+                        <div class="pricing__price"><span class="pricing__currency"></span>Patent<br> Filed</div>
+                        <p class="pricing__sentence">These are the Patent filed by our AI Lab students from Bannari Amman Institute of Technology.</p>
+                        <button class="pricing__action"><a href="https://docs.google.com/document/d/1JDv11uRe4_W0ZIpKJqP2nS0Yfak08_9Y7hLlMm_6exc/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__title">Special Lab</h3>
+                        <div class="pricing__price"><span class="pricing__currency"></span>Competition Status</div>
+                        <p class="pricing__sentence">By clicking here you can be knowing the Competition Status of students.</p>
+                        <button class="pricing__action"><a href="https://docs.google.com/spreadsheets/d/1DKv9NL4gPJDG_LAiBBISe297eDKi_AzC/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__title">AI Lab</h3>
+                        <div class="pricing__price"><span class="pricing__currency"></span>Consultancy Details</div>
+                        <p class="pricing__sentence">Click the button below to know the Consultancy details of the AI Lab.</p>
+                        <button class="pricing__action"><a href="https://docs.google.com/document/d/11TYPEnT5AqptAU7PhAOUslF2C86l1uLg/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                    </div>
+                </div>
+
+                <div class="pricing pricing--tenzin">
+                    <div class="pricing__item">
+                        <h3 class="pricing__title">AI Lab</h3>
+                        <div class="pricing__price"><span class="pricing__currency"></span>Funding<br>Details</div>
+                        <p class="pricing__sentence">By Click below you can know the funding details of AI Lab by Industries.</p>
+                        <button class="pricing__action"><a href="https://docs.google.com/document/d/1iZSnTPAmcKYFiRYXQa6FcP1fuazaxllT/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank"
+                        rel="noreferrer noopener">Know More!</a></button>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__title">NVIDIA</h3>
+                        <div class="pricing__price"><span class="pricing__currency"></span>Certification Completed List</div>
+                        <p class="pricing__sentence">Click the below button to view the Certification Completed List from AI Lab.</p>
+                        <button class="pricing__action"><a href="https://docs.google.com/document/d/1WHvBlSOENbwrg26AI7bd8HM4Q40U3ji6GB8eR6J34f0/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                    </div>
+                    <div class="pricing__item">
+                        <h3 class="pricing__title">AI Lab</h3>
+                        <div class="pricing__price"><span class="pricing__currency"></span>Industry Sponsorship</div>
+                        <p class="pricing__sentence">This is the information about the Industry Sponsorship to our AI Lab.</p>
+                        <button class="pricing__action"><a href="https://docs.google.com/document/d/11tU0T4gGnqXlpI8tQhWQ2VHMjixeyRIM/edit?usp=sharing&ouid=105133065285694325041&rtpof=true&sd=true" target="_blank" rel="noreferrer noopener">Know More!</a></button>
+                    </div>
+                </div>
+            </section>
+            <script>
+                let parent = document.querySelectorAll('.animate-text');
+                for (let i = 0; i < parent.length; i++) {
+                    parent[i].style.width = parent[i].children[0].clientWidth + "px";
+                };
+            </script>
+        </section>
+
+
+        <!-- Slideshow -->
+
+        <section class="projects" id="projects">
+            <h2>Projects</h2>
+
+            <div class="w3-content w3-section">
+                <a href="#"><img class="mySlides" src="./1.png" style=" width:900px;height: 450px; "></a>
+                <a href="#"><img class="mySlides " src="./2.png" style="width:900px;height:450px; "></a>
+                <a href="#"><img class="mySlides " src="./3.png" style="width:900px;height:450px; "></a>
+                <a href="#"><img class="mySlides" src="./4.png" style=" width:900px;height: 450px; "></a>
+                <a href="#"><img class="mySlides " src="./5.png" style="width:900px;height:450px; "></a>
+            </div>
+            <br>
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides ");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none ";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {
+                        myIndex = 1
+                    }
+                    x[myIndex - 1].style.display = "block ";
+                    setTimeout(carousel, 4000); // Change image every 4 seconds
+                }
+            </script>
+
+        </section>
+
+
+        <!--Get in Touch-->
+
+        <footer id="dk-footer" class="dk-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-4">
+                        <div class="dk-footer-box-info">
+                            <center><img src="./blogo.png" width="3706" height="2411" alt="footer_logo" class="img-fluid">
+                                <p class="footer-info-text">Explore more and join us @ Artificial Intelligence Laboratory - Bannari Amman Institute of Technology </p>
+                                <div class="hero-btn-1" id="button-5">
+                                    <div id="translate"></div>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdYpG6o--RMWvjwGBJZneJLd97t5Sb0N5XsbD5xQybGdotAbg/viewform" target="_blank" rel="noreferrer noopener">JOIN US</a>
+                                </div>
+                            </center>
+                        </div>
+
+                    </div>
+                    <!-- End Col -->
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-us">
+                                    <div class="contact-icon">
+                                        <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info">
+                                        <h3>Contact</h3>
+                                        <p>P. Purusothaman</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                            <div class="col-md-6">
+                                <div class="contact-us contact-us-last">
+                                    <div class="contact-icon1">
+                                        <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <!-- End contact Icon -->
+                                    <div class="contact-info1">
+                                        <h3>+91 99520 13214</h3>
+                                        <p>Give us a call</p>
+                                    </div>
+                                    <!-- End Contact Info -->
+                                </div>
+                                <!-- End Contact Us -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Contact Row -->
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget footer-left-widget">
+                                    <div class="section-heading">
+                                        <h1>Incharge:</h1>
+                                        <br>
+                                        <p>Artificial Intelligence Laboratory, Bannari Amman Institute of Technology, Alathukombai - Post, Sathyamangalam, Erode District, Tamil Nadu - 638 401 </p>
+                                    </div>
+                                </div>
+                                <!-- End Footer Widget -->
+                            </div>
+                            <!-- End col -->
+                            <div class="col-md-12 col-lg-6">
+                                <div class="footer-widget">
+                                    <div class="section-heading">
+
+                                    </div>
+                                    <ul>
+
+                                        <li>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                        </li>
+                                        <li>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="./contact.html">Contact us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#projects">Projects</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://docs.google.com/document/d/1PPsvr2W7MbPgydfF8MOlsds2JadgYrLlMgSwqg4zuHo/edit?usp=sharing" target="_blank" rel="noreferrer noopener">Lab Activites</a>
+                                        </li>
+                                        <li>
+                                            <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a>
+                                        </li>
+                                    </ul>
+                                    <!-- End form -->
+                                </div>
+                                <!-- End footer widget -->
+                            </div>
+                            <!-- End Col -->
+                        </div>
+                        <!-- End Row -->
+                    </div>
+                    <div id="back-to-top " class="back-to-top ">
+                        <button class="btn btn-dark " title="Back to Top " style="display: block; ">
+                        <a href="#home"><i class="fa fa-angle-up "></i></a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
 
 
     <!-- Chatbot Integration -->
@@ -678,8 +752,6 @@
 
                         }
 
-                        // add other props here
-
                     },
 
                     null
@@ -715,6 +787,18 @@
 
         function hidemenu() {
             navlinks.style.right = "-200px ";
+        }
+    </script>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
         }
     </script>
 
