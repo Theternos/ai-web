@@ -145,7 +145,7 @@
         }
         
         .navi-header-contact {
-            min-height: 330vh;
+            min-height: 350vh;
             width: 100%;
             background-image: url(./background.png);
             background-position: center;
@@ -1363,7 +1363,8 @@
         .staff h1 {
             color: #fff;
             font-family: 'Raleway', sans-serif;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.12em;
+            margin-top: 2%;
         }
         
         .cards {
