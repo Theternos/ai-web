@@ -556,7 +556,7 @@
             width: 715px;
             height: 81px;
             left: 12%;
-            top: 9%;
+            top: 50%;
             font-family: 'Montserrat';
             font-style: normal;
             font-weight: 800;
@@ -1219,10 +1219,8 @@
         }
         /*Projects*/
         
-        .mySlides {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        .projects {
+            padding-bottom: 5%;
         }
         
         .projects h2 {
