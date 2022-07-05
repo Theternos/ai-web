@@ -313,13 +313,17 @@
             text-align: center;
         }
         
-        .text-box h1 {
-            font-size: 50px;
-        }
-        
         .text-box h2 {
             font-size: 56px;
-            top: 0%;
+            position: absolute;
+            width: 1521px;
+            height: 87px;
+            right: -50.5%;
+            top: -45%;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 800;
+            line-height: 87px;
         }
         
         .text-box p {
