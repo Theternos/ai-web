@@ -145,7 +145,7 @@
         }
         
         .navi-header-contact {
-            min-height: 250vh;
+            min-height: 330vh;
             width: 100%;
             background-image: url(./background.png);
             background-position: center;
@@ -1362,6 +1362,8 @@
         
         .staff h1 {
             color: #fff;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.1em;
         }
         
         .cards {
@@ -1371,7 +1373,17 @@
             margin: 4rem 5vw;
             padding: 0;
             list-style-type: none;
-            width: 60%;
+            width: 42%;
+        }
+        
+        .cards2 {
+            display: inline-flex;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding: 0;
+            list-style-type: none;
+            width: 20%;
         }
         
         .cards1 {
@@ -1381,7 +1393,7 @@
             margin: 4rem 5vw;
             padding: 0;
             list-style-type: none;
-            width: 83%;
+            width: 68%;
         }
         
         .card {
