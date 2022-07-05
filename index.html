@@ -17,7 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="./slideshow_style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link rel="stylesheet" type="text/css" href="./linking-card.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
         #loader {
             position: fixed;
@@ -184,9 +186,13 @@
         <section class="objectives">
             <div class="objectives-text-box">
                 <h1>OBJECTIVES</h1>
-                <h3>To provide Technical training to students in the focus areas of AI.<br>Motivate and guide students to participate in competitions.<br>To take up industry defined problems and provide solutions.</h3>
+                <h3><i class='fas fa-bullseye' style='font-size:24px ;color:white'></i> To provide Technical training to students in the focus areas of AI.<br><i class='fas fa-bullseye' style='font-size:24px ;color:white'></i> Motivate and guide students
+                    to participate in competitions.<br><i class='fas fa-bullseye' style='font-size:24px ;color:white'></i> To take up industry defined problems and provide solutions.</h3>
                 <h2>FOCUS AREAS</h2>
-                <h4>Machine Learning.<br>Deep Learning.<br>Natural Language Processing.</h4>
+                <h4><a href="#"><i class='fas fa-bullseye' style='font-size:24px ;color:white'></i> Machine Learning</a><br>
+                    <a href="#"><i class='fas fa-bullseye' style='font-size:24px ;color:white'></i> Deep Learning</a><br>
+                    <a href="#"><i class='fas fa-bullseye' style='font-size:24px ;color:white'></i> Natural Language Processing</a>
+                </h4>
             </div>
         </section>
 
@@ -535,36 +541,55 @@
 
         <!-- Slideshow -->
 
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-
-            <div class="w3-content w3-section">
-                <a href="#"><img class="mySlides" src="./1.png" style=" width:900px;height: 450px; "></a>
-                <a href="#"><img class="mySlides " src="./2.png" style="width:900px;height:450px; "></a>
-                <a href="#"><img class="mySlides " src="./3.png" style="width:900px;height:450px; "></a>
-                <a href="#"><img class="mySlides" src="./4.png" style=" width:900px;height: 450px; "></a>
-                <a href="#"><img class="mySlides " src="./5.png" style="width:900px;height:450px; "></a>
+        <section>
+            <div class="w3-content w3-display-container" style="max-width:800px">
+                <img class="mySlides" src="1.png" style="width:100%">
+                <img class="mySlides" src="2.png" style="width:100%">
+                <img class="mySlides" src="3.png" style="width:100%">
+                <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                </div>
             </div>
-            <br>
-            <script>
-                var myIndex = 0;
-                carousel();
 
-                function carousel() {
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
                     var i;
-                    var x = document.getElementsByClassName("mySlides ");
+                    var x = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
                     for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none ";
+                        x[i].style.display = "none";
                     }
-                    myIndex++;
-                    if (myIndex > x.length) {
-                        myIndex = 1
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" w3-white", "");
                     }
-                    x[myIndex - 1].style.display = "block ";
-                    setTimeout(carousel, 4000); // Change image every 4 seconds
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
                 }
             </script>
-
+            <br>
+            <br>
         </section>
 
 
@@ -653,7 +678,7 @@
                                             <a href="./contact.html">Contact us</a>
                                         </li>
                                         <li>
-                                            <a href="#">Blog</a>
+                                            <a href="https://aiclub1.s3.ap-south-1.amazonaws.com/blog.html">Blog</a>
                                         </li>
                                         <li>
                                             <a href="#projects">Projects</a>
