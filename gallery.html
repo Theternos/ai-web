@@ -17,76 +17,54 @@
     <link rel='stylesheet' href='https://unpkg.com/splitting/dist/splitting.css'>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <style>
-        #loader {
-            position: fixed;
-            left: 50%;
-            top: 50%;
-            z-index: 1;
-            border: 16px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 16px solid blue;
-            border-bottom: 16px solid blue;
-            width: 120px;
-            height: 120px;
-            margin: -76px 0 0 -76px;
-            -webkit-animation: spin 2s linear infinite;
-            animation: spin 2s linear infinite;
-        }
-        
-        @-webkit-keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-            }
-        }
-        
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-        /* Add animation to "page content" */
-        
-        .animate-bottom {
-            position: relative;
-            -webkit-animation-name: animatebottom;
-            -webkit-animation-duration: 1s;
-            animation-name: animatebottom;
-            animation-duration: 1s
-        }
-        
-        @-webkit-keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
-            }
-            to {
-                bottom: 0px;
-                opacity: 1
-            }
-        }
-        
-        @keyframes animatebottom {
-            from {
-                bottom: -100px;
-                opacity: 0
-            }
-            to {
-                bottom: 0;
-                opacity: 1
-            }
-        }
-        
-        #myDiv {
-            display: none;
-            text-align: center;
-        }
-        
+#loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+   margin: -76px 0 0 -76px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
         body {
             background-color: #fff;
             background-image: url('./background_1.png');
@@ -111,12 +89,13 @@
                         Bannari Amman Institute of Technology
                     </div>
                 </div>
+    
                 <div class="main-nav" id="navlinks">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li> <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a></li>
-                        <li> <a href="./index.html#projects">Projects</a></li>
-                        <li> <a href="./contact.html">Contact US</a></li>
+                        <li> <a href="">Projects</a></li>
+                        <li> <a href="">Contact US</a></li>
                     </ul>
                 </div>
             </nav>
@@ -127,136 +106,177 @@
                     <span class="title-word title-word-3">GALLERY</span>
                 </h2>
             </div>
+            </div>
+            <div class="content">
+    
+                <div class="video-gallery">
+                    <div class="gallery-item" data-aos="fade-right">
+                        <div class="gallery-item1 ">
+                            <img src="a0.JPG" alt="Mount Rainier" />
+                            <div class="gallery-item-caption">
+                                <!--<div>-->
+                                <h2>AI Work Place</h2>
+                                <p>Equiped with high-tech machines</p>
+                                <!--</div>-->
+                                <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item" data-aos="fade-left">
+                        <div class="gallery-item2">
+                            <img src="a5.png" alt="Olympic National Park" />
+                            <div class="gallery-item-caption">
+                                <!--<div>-->
+                                <h2>AI Hackathon</h2>
+                                <p> AI Students particapte in the hackathons regularly</p>
+                                <!--</div>-->
+                                <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item" data-aos="fade-right">
+                        <div class="gallery-item3">
+                            <img src="achivement_1.jpg" class="north-cascades-img" alt="North Cascades National Park" />
+                            <div class="gallery-item-caption">
+                                <!--<div>-->
+                                <h2>KCG HACKATHON</h2>
+                                <p>Won cash prize of Rs.10,000</p>
+                                <!--</div>-->
+                                <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item" data-aos="fade-left">
+                        <div class="gallery-item4">
+                            <img src="a1.jpg" alt="Mount St Helens" />
+                            <div class="gallery-item-caption">
+                                <!--<div>-->
+                                <h2>AI Lab Staffs
+                                </h2>
+                                <p>Staffs Available 24/7</p>
+                                <!--</div>-->
+                                <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item " data-aos="fade-right">
+                        <img src="a2.jpg" alt="Mount Rainier" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>AI Work Place</h2>
+                            <p>Equiped with high-tech machines</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item" data-aos="fade-left">
+                        <img src="a3.jpg" alt="Olympic National Park" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>SRISHTHI 2K19 hACKATHON</h2>
+                            <p>AI Lab Students Backed Overall Championship Thropy </p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
+                        </div>
+                    </div>
+    
+                    <div class="gallery-item" data-aos="fade-right">
+                        <img src="a4.jpg" class="north-cascades-img" alt="North Cascades National Park" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>Lectures on Deep Learning</h2>
+                            <p>Lectures are taken on all the AI Verticals</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-aos="fade-right">
+                        <img src="p1.jpeg" class="north-cascades-img" alt="North Cascades National Park" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2></h2>
+                            <p>Lectures are taken on all the AI Verticals</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-aos="fade-right">
+                        <img src="p2.jpeg" class="north-cascades-img" alt="North Cascades National Park" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>Lectures on Deep Learning</h2>
+                            <p>Lectures are taken on all the AI Verticals</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-right">
+                        <img src="p3.jpeg" class="north-cascades-img" alt="North Cascades National Park" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>Lectures on Deep Learning</h2>
+                            <p>Lectures are taken on all the AI Verticals</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-right">
+                        <img src="p5.jpg" class="north-cascades-img" alt="North Cascades National Park" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>Lectures on Deep Learning</h2>
+                            <p>Lectures are taken on all the AI Verticals</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="fade-left">
+                        <img src="a5.png" alt="Mount St Helens" />
+                        <div class="gallery-item-caption">
+                            <!--<div>-->
+                            <h2>TECH-HACKATHON 2022</h2>
+                            <p>AI Lab team participated in the TECH-HACKATHON 2022</p>
+                            <!--</div>-->
+                            <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
+                        </div>
+                    </div>
+    
+    
+    
+                </div>
+            </div>
     </div>
-    <div class="content">
-
-        <div class="video-gallery">
-            <div class="gallery-item" data-aos="fade-right">
-                <div class="gallery-item1 ">
-                    <img src="a0.JPG" alt="Mount Rainier" />
-                    <div class="gallery-item-caption">
-                        <!--<div>-->
-                        <h2>AI Work Place</h2>
-                        <p>Equiped with high-tech machines</p>
-                        <!--</div>-->
-                        <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-left">
-                <div class="gallery-item2">
-                    <img src="a5.png" alt="Olympic National Park" />
-                    <div class="gallery-item-caption">
-                        <!--<div>-->
-                        <h2>AI Hackathon</h2>
-                        <p> AI Students particapte in the hackathons regularly</p>
-                        <!--</div>-->
-                        <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-right">
-                <div class="gallery-item3">
-                    <img src="achivement_1.jpg" class="north-cascades-img" alt="North Cascades National Park" />
-                    <div class="gallery-item-caption">
-                        <!--<div>-->
-                        <h2>KCG HACKATHON</h2>
-                        <p>Won cash prize of Rs.10,000</p>
-                        <!--</div>-->
-                        <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-left">
-                <div class="gallery-item4">
-                    <img src="a1.jpg" alt="Mount St Helens" />
-                    <div class="gallery-item-caption">
-                        <!--<div>-->
-                        <h2>AI Lab Staffs
-                        </h2>
-                        <p>Staffs Available 24/7</p>
-                        <!--</div>-->
-                        <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gallery-item " data-aos="fade-right">
-                <img src="a2.jpg" alt="Mount Rainier" />
-                <div class="gallery-item-caption">
-                    <!--<div>-->
-                    <h2>AI Work Place</h2>
-                    <p>Equiped with high-tech machines</p>
-                    <!--</div>-->
-                    <a class="vimeo-popup" href="https://vimeo.com/179049611"></a>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-left">
-                <img src="a3.jpg" alt="Olympic National Park" />
-                <div class="gallery-item-caption">
-                    <!--<div>-->
-                    <h2>SRISHTHI 2K19 hACKATHON</h2>
-                    <p>AI Lab Students Backed Overall Championship Thropy </p>
-                    <!--</div>-->
-                    <a class="vimeo-popup" href="https://vimeo.com/108785446"></a>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-right">
-                <img src="a4.jpg" class="north-cascades-img" alt="North Cascades National Park" />
-                <div class="gallery-item-caption">
-                    <!--<div>-->
-                    <h2>Lectures on Deep Learning</h2>
-                    <p>Lectures are taken on all the AI Verticals</p>
-                    <!--</div>-->
-                    <a class="vimeo-popup" href="https://vimeo.com/3653567"></a>
-                </div>
-            </div>
-
-            <div class="gallery-item" data-aos="fade-left">
-                <img src="a5.png" alt="Mount St Helens" />
-                <div class="gallery-item-caption">
-                    <!--<div>-->
-                    <h2>TECH-HACKATHON 2022</h2>
-                    <p>AI Lab team participated in the TECH-HACKATHON 2022</p>
-                    <!--</div>-->
-                    <a class="vimeo-popup" href="https://vimeo.com/171540296"></a>
-                </div>
-            </div>
-
-
-
-        </div>
-    </div>
-    </div>
-
-    <!-- partial -->
-    <script src='./jquery.js'></script>
-    <script src='./magnific_popup.js'></script>
-    <script src="./gallery_script.js"></script>
-    <script src='./splitting_min.js'></script>
-    <script src='./gsap.js'></script>
-    <script src="./gallery_script.js"></script>
-    <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
-    <script src='https://unpkg.com/splitting/dist/splitting.js'></script>
-    <script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script>
-    <script src="./gallery_script.js"></script>
-    <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 30);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
+   
+        <!-- partial -->
+        <script src='./jquery.js'></script>
+        <script src='./magnific_popup.js'></script>
+        <script src="./gallery_script.js"></script>
+        <script src='./splitting_min.js'></script>
+        <script src='./gsap.js'></script>
+        <script src="./gallery_script.js"></script>
+        <script src='https://unpkg.com/aos@next/dist/aos.js'></script>
+        <script src='https://unpkg.com/splitting/dist/splitting.js'></script>
+        <script src='https://unpkg.com/scroll-out/dist/scroll-out.min.js'></script>
+        <script src="./gallery_script.js"></script>
+        <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 30);
+            }
+            
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
 </body>
 
 </html>
