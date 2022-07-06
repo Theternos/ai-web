@@ -657,6 +657,108 @@
             </div>
         </footer>
     </div>
+    <!-- for bot-->
+
+    <style>
+        .rw-conversation-container .rw-header {
+            background-color: #50246c;
+        }
+        
+        .rw-conversation-container .rw-header .rw-title {
+            color: #ffffff;
+        }
+        
+        .rw-conversation-container .rw-messages-container .rw-message .rw-client {
+            background-color: #f78537;
+        }
+        
+        .rw-launcher {
+            background-color: #ffffff;
+        }
+        
+        .rw-conversation-container .rw-messages-container .rw-replies .rw-reply {
+            background-color: #50246c;
+        }
+        
+        .rw-conversation-container .rw-messages-container .rw-message .rw-carousel-container .rw-carousel-card .rw-carousel-buttons-container .rw-reply {
+            background-color: #50246c;
+        }
+        
+        .rw-launcher {
+            background-color: #50246c;
+        }
+    </style>
+
+
+    <!-- Chatbot Integration -->
+
+    <script>
+        !(function() {
+
+            let e = document.createElement("script"),
+
+                t = document.head || document.getElementsByTagName("head")[0];
+
+            (e.src =
+
+                "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+
+            (e.async = !0),
+
+            (e.onload = () => {
+
+                window.WebChat.default(
+
+                    {
+
+                        title: 'BIT Assistant',
+
+                        subtitle: 'Powered by AI Lab',
+
+                        initPayload: '/greet',
+
+                        tooltipPayload: "/greet",
+
+                        customData: {
+                            language: "en"
+                        },
+
+                        socketUrl: "http://10.30.10.26:5005",
+
+                        profileAvatar: "assets/bit.png",
+
+                        openLauncherImage: "assets/bit.png",
+
+                        inputTextFieldHint: "Ask anything about BIT!",
+
+                        params: {
+
+                            images: {
+
+                                dims: {
+
+                                    width: 300,
+
+                                    height: 200,
+
+                                }
+
+                            },
+
+                            storage: "session"
+                        }
+                    },
+
+                    null
+
+                );
+
+            }),
+
+            t.insertBefore(e, t.firstChild);
+
+        })();
+    </script>
 
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js '></script>
