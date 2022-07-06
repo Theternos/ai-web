@@ -1949,6 +1949,10 @@ html {
     cursor: auto;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .myDiv {
     display: none;
     text-align: center;
