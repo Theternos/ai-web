@@ -543,6 +543,9 @@ nav .fa {
     .clg-name1 {
         display: none;
     }
+    .text-box h2 {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 640px) {
