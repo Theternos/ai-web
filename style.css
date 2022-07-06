@@ -1262,125 +1262,6 @@ html {
 }
 
 
-/* Infinity Scrolling */
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
-.docx-linking {
-    font-family: montserrat;
-    color: #fff;
-}
-
-.bg-text-container {
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
-    transform: skewY(-5deg);
-    z-index: -999;
-}
-
-@keyframes text-scrolling {
-    0% {
-        transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-        transform: translate3d(0%, 0, 0);
-    }
-}
-
-.animate-text {
-    animation: text-scrolling 20s linear infinite;
-    will-change: transform;
-    display: block;
-    position: relative;
-    white-space: nowrap;
-}
-
-.animate-text.left {
-    animation-direction: reverse;
-}
-
-.infinity {
-    font-size: 280px;
-    color: transparent;
-    -webkit-text-stroke: 2px #000000;
-    text-transform: uppercase;
-    display: inline-block;
-    line-height: 0.75;
-    min-width: auto;
-    font-weight: 800;
-}
-
-.container {
-    padding: 30px;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.container .col {
-    max-width: 600px;
-    margin: 0;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Montserrat:800,200);
-.docx-linking {
-    font-family: montserrat;
-    color: #fff;
-}
-
-.bg-text-container {
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
-    transform: skewY(-5deg);
-    z-index: -999;
-}
-
-@keyframes text-scrolling {
-    0% {
-        transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-        transform: translate3d(0%, 0, 0);
-    }
-}
-
-.animate-text {
-    animation: text-scrolling 20s linear infinite;
-    will-change: transform;
-    display: block;
-    position: relative;
-    white-space: nowrap;
-}
-
-.animate-text.left {
-    animation-direction: reverse;
-}
-
-.infinity {
-    font-size: 280px;
-    color: transparent;
-    -webkit-text-stroke: 2px #000000;
-    text-transform: uppercase;
-    display: inline-block;
-    line-height: 0.75;
-    min-width: auto;
-    font-weight: 800;
-}
-
-.container {
-    padding: 30px;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.container .col {
-    max-width: 600px;
-    margin: 0;
-}
-
-
 /*Staff Card*/
 
  :root {
@@ -2066,4 +1947,9 @@ html {
 
 .auto {
     cursor: auto;
+}
+
+.myDiv {
+    display: none;
+    text-align: center;
 }
