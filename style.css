@@ -1901,6 +1901,14 @@ html {
     border-color: #FA6742;
 }
 
+.back-to-top i {
+    color: #fff;
+}
+
+.back-to-top i:hover {
+    color: #000;
+}
+
 
 /* Chatbot */
 
@@ -1933,7 +1941,7 @@ html {
 }
 
 .design {
-    min-height: 10vh;
+    min-height: 12vh;
     color: #fff;
     font-family: 'Poppins';
     letter-spacing: 0.1em;
