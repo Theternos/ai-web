@@ -43,6 +43,7 @@
                 </div>
 
                 <div class="main-nav" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
                     <ul>
                         <li><a href="./index.html">Home</a></li>
                         <li> <a href="./gallery.html" target="_blank" rel="noreferrer noopener">Gallery</a></li>
@@ -52,31 +53,9 @@
                         <li> <a href="./contact.html">Contact US</a></li>
                     </ul>
                 </div>
-                <div class="main"><i class="fa fa-bars" onclick="openNav()"></i></div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
             </nav>
 
-            <!--Mobile View Navigation bar-->
-            <div id="mySidebar" class="sidebar">
-                <div class="closebtn"><i href="javascript:void(0)" class="fa fa-times" onclick="closeNav()"></i></div>
-                <a href="./index.html">Home</a>
-                <a href="./gallery.html">Gallery</a>
-                <a href="http://aiclub1.s3-website.ap-south-1.amazonaws.com/courses.html" target="_blank" rel="noreferrer noopener">Online Resources</a>
-                <a href="./index.html#projects">Projects</a>
-                <a href="#qwerty">Funding & Consultancy</a>
-                <a href="./contact.html">Contact Us</a>
-            </div>
-
-            <script>
-                function openNav() {
-                    document.getElementById("mySidebar").style.width = "250px";
-                    document.getElementById("main").style.marginLeft = "250px";
-                }
-
-                function closeNav() {
-                    document.getElementById("mySidebar").style.width = "0";
-                    document.getElementById("main").style.marginLeft = "0";
-                }
-            </script>
             <!-- Page 1 Content -->
             <!--Word Animation-->
             <div class="content">
@@ -667,7 +646,7 @@
                                             <a href="./contact.html">Contact us</a>
                                         </li>
                                         <li>
-                                            <a href="http://aiclub1.s3-website.ap-south-1.amazonaws.com/blog.html">Blog</a>
+                                            <a href="#">Blog</a>
                                         </li>
                                         <li>
                                             <a href="#projects">Projects</a>

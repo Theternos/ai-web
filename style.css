@@ -7,10 +7,6 @@
     font-family: 'Montserrat', 'Poppins';
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 
 /*---------- Word Animation ------------*/
 
@@ -494,6 +490,10 @@ html {
 
 
 /*Scrolling Down*/
+
+html {
+    scroll-behavior: smooth;
+}
 
 #home {
     height: 600px;
@@ -2286,7 +2286,6 @@ html {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    z-index: 99;
 }
 
 .sidebar a {
@@ -2307,14 +2306,8 @@ html {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 27px;
+    font-size: 36px;
     margin-left: 50px;
-    margin-top: 35px;
-}
-
-.fa:hover {
-    color: #fff;
-    cursor: pointer;
 }
 
 .openbtn {
