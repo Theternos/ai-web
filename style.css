@@ -319,7 +319,7 @@
     text-align: center;
 }
 
-.labname1 {
+.text-box h2 {
     font-size: 56px;
     position: absolute;
     width: 1521px;
@@ -330,16 +330,6 @@
     font-style: normal;
     font-weight: 800;
     line-height: 87px;
-}
-
-.labname2 {
-    font-size: 50px;
-    position: absolute;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 800;
-    line-height: 87px;
-    top: -25%;
 }
 
 .text-box p {
@@ -516,7 +506,7 @@ nav .fa {
 }
 
 
-/* Mobile view */
+/* Navigation bar Mobile view */
 
 @media screen and (max-width: 640px) {
     .text-box h1 {
@@ -553,133 +543,13 @@ nav .fa {
     .clg-name1 {
         display: none;
     }
-    .labname1 {
-        display: none;
-    }
-    .nvidia-logo-mobile {
-        position: absolute;
-        left: 5%;
-        top: 59%;
-        z-index: 5;
-    }
-    .nvidia-logo {
-        display: none;
-    }
-    .nvidianame1 {
-        display: none;
-    }
-    .nvidianame3 {
-        display: none;
-    }
-    .nvidianame5 {
-        display: none;
-    }
-    .hero-btn-2 {
-        display: none;
-    }
-    .hero-btn-2 a {
-        display: none;
-    }
-    #button-3 {
-        display: none;
-    }
-    #button-3 a {
-        display: none;
-    }
-    #circle2 {
-        display: none;
-    }
-    #button-3:hover #circle2 {
-        display: none;
-    }
-    #button-3:hover a {
-        display: none;
-    }
-    .nvidia-container {
-        display: none;
-    }
-    .objectivesname {
-        display: none;
-    }
-    .objectivesname1 {
-        display: none;
-    }
-    .focusareasname {
-        display: none;
-    }
-    .focusareasname1 {
-        display: none;
-    }
-    .dk-footer {
-        display: none;
-    }
-    .projects {
-        display: none;
-    }
-    .main-nav {
+    .text-box h2 {
         display: none;
     }
 }
 
 @media screen and (min-width: 640px) {
     .clg-name2 {
-        display: none;
-    }
-    .labname2 {
-        display: none;
-    }
-    .nvidia-logo-mobile {
-        display: none
-    }
-    .nvidianame2 {
-        display: none;
-    }
-    .nvidianame4 {
-        display: none;
-    }
-    .nvidianame6 {
-        display: none;
-    }
-    .hero-btn-2-mobile {
-        display: none;
-    }
-    .hero-btn-2-mobile a {
-        display: none;
-    }
-    #button-3-mobile {
-        display: none;
-    }
-    #button-3-mobile a {
-        display: none;
-    }
-    #circle2-moblie {
-        display: none;
-    }
-    #button-3-mobile:hover #circle2-mobile {
-        display: none;
-    }
-    #button-3-mobile:hover a {
-        display: none;
-    }
-    .objectivesname-mobile {
-        display: none;
-    }
-    .objectivesname1-mobile {
-        display: none;
-    }
-    .focusareasname-mobile {
-        display: none;
-    }
-    .focusareasname1-mobile {
-        display: none;
-    }
-    .projects-mobile {
-        display: none;
-    }
-    .pg-footer {
-        display: none;
-    }
-    .sidebar {
         display: none;
     }
 }
@@ -702,7 +572,7 @@ nav .fa {
     height: 162px;
 }
 
-.nvidianame1 {
+.nvidia-text-box h1 {
     position: absolute;
     width: 715px;
     height: 81px;
@@ -717,22 +587,7 @@ nav .fa {
     z-index: 2;
 }
 
-.nvidianame2 {
-    position: absolute;
-    width: 715px;
-    height: 81px;
-    left: -18%;
-    top: 36%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 55px;
-    line-height: 98px;
-    color: #FFFFFF;
-    z-index: 2;
-}
-
-.nvidianame3 {
+.nvidia-text-box h3 {
     position: absolute;
     width: 805px;
     height: 81px;
@@ -746,21 +601,7 @@ nav .fa {
     color: #FFFFFF;
 }
 
-.nvidianame4 {
-    position: absolute;
-    width: 805px;
-    height: 81px;
-    right: 27.5%;
-    top: 65%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 250;
-    font-size: 16px;
-    line-height: 110px;
-    color: #FFFFFF;
-}
-
-.nvidianame5 {
+.nvidia-text-box h2 {
     position: absolute;
     width: 805px;
     height: 81px;
@@ -770,20 +611,6 @@ nav .fa {
     font-style: normal;
     font-weight: 200;
     font-size: 30px;
-    line-height: 110px;
-    color: #cecece;
-}
-
-.nvidianame6 {
-    position: absolute;
-    width: 805px;
-    height: 81px;
-    right: 28%;
-    padding-top: 23%;
-    font-family: 'poppins';
-    font-style: normal;
-    font-weight: 200;
-    font-size: 18px;
     line-height: 110px;
     color: #cecece;
 }
@@ -834,71 +661,6 @@ nav .fa {
     color: #fff;
     top: 53%;
     right: 22%;
-}
-
-.hero-btn-2-mobile {
-    display: inline-flex;
-    font-family: 'Raleway', sans-serif;
-    height: 40px;
-    width: 170px;
-    border: 2px solid #BFC0C0;
-    margin: 20px 20px 20px 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: .8em;
-    letter-spacing: 1.5px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    top: 40%;
-    right: 0%;
-}
-
-.hero-btn-2-mobile a {
-    color: #BFC0C0;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-#button-3-mobile {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-#button-3-mobile a {
-    position: relative;
-    transition: all .45s ease-Out;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-#circle2-moblie {
-    width: 0%;
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 50%;
-    background: #BFC0C0;
-    position: absolute;
-    transition: all .5s ease-Out;
-    top: 50%;
-    left: 50%;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-}
-
-#button-3-mobile:hover #circle2-mobile {
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-}
-
-#button-3-mobile:hover a {
-    color: #2D3142;
 }
 
 .hero-btn-2 a {
@@ -967,81 +729,21 @@ nav .fa {
     top: 50px;
 }
 
-.objectivesname-mobile {
-    position: absolute;
-    width: 532px;
-    height: 81px;
-    font-weight: 500;
-    font-size: 30px;
-    right: -22%;
-    top: 0%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    color: #FFFFFF;
-    z-index: 2;
-}
-
-.objectivesname1-mobile {
-    top: -100%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 13px;
-    color: #FFFFFF;
-    text-align: left;
-    position: absolute;
-    width: 80%;
-    height: 222px;
-    right: -60%;
-    top: 50%;
-    line-height: 30px;
-    color: #FFFFFF;
-}
-
-.focusareasname-mobile {
+.objectives-text-box h1 {
     position: absolute;
     width: 532px;
     height: 81px;
     right: -25%;
-    top: 200%;
+    top: 0%;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    color: #FFFFFF;
-    z-index: 2;
-}
-
-.focusareasname1-mobile {
-    top: -100%;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-size: 13px;
-    color: #FFFFFF;
-    text-align: left;
-    position: absolute;
-    width: 80%;
-    height: 222px;
-    right: -60%;
-    top: 255%;
-    line-height: 40px;
-    color: #FFFFFF;
-}
-
-.objectivesname {
-    position: absolute;
-    width: 532px;
-    height: 81px;
     font-weight: 600;
     font-size: 35px;
-    right: -25%;
-    top: 0%;
-    font-family: 'Montserrat';
-    font-style: normal;
     color: #FFFFFF;
     z-index: 2;
 }
 
-.objectivesname1 {
+.objectives-text-box h3 {
     top: -100%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -1057,7 +759,7 @@ nav .fa {
     color: #FFFFFF;
 }
 
-.focusareasname {
+.objectives-text-box h2 {
     position: absolute;
     width: 532px;
     height: 81px;
@@ -1071,7 +773,7 @@ nav .fa {
     z-index: 2;
 }
 
-.focusareasname1 {
+.objectives-text-box h4 {
     top: -100%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -1553,10 +1255,6 @@ html {
 /*Projects*/
 
 .projects {
-    padding-bottom: 5%;
-}
-
-.projects-mobile {
     padding-bottom: 5%;
 }
 
@@ -2269,72 +1967,4 @@ html {
 .myDiv {
     display: none;
     text-align: center;
-}
-
-.mobile-nav {
-    font-family: "Lato", sans-serif;
-}
-
-.sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-    text-decoration: none;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 10px 15px;
-    border: none;
-    background-color: none;
-}
-
-.openbtn:hover {
-    background-color: #444;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 15px;
-    }
-    .sidebar a {
-        font-size: 18px;
-    }
 }
