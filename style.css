@@ -697,7 +697,7 @@ nav .fa {
         margin-top: 90%;
     }
     .projects {
-        padding-top: 400%;
+        margin-top: 450%;
     }
 }
 
@@ -1033,7 +1033,7 @@ nav .fa {
 
 .objectives-text-box-mobile {
     position: absolute;
-    width: 475px;
+    width: 375px;
     height: 22%;
     right: 77%;
     top: 50px;
@@ -1043,7 +1043,7 @@ nav .fa {
     position: absolute;
     width: 532px;
     height: 81px;
-    right: -62%;
+    right: -80%;
     top: 20%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -1073,7 +1073,7 @@ nav .fa {
     position: absolute;
     width: 532px;
     height: 81px;
-    right: -65%;
+    right: -83%;
     top: 230%;
     font-family: 'Montserrat';
     font-style: normal;
@@ -1833,11 +1833,11 @@ html {
 }
 
 .dk-footer-mobile {
-    padding: 75px 0 0;
     background-color: #151414;
-    position: relative;
+    position: absolute;
     z-index: 2;
     min-height: 80vh;
+    top: -100%;
 }
 
 .dk-footer-mobile .contact-us {
@@ -1903,6 +1903,17 @@ html {
     width: 25rem;
     left: 5%;
     height: 28rem;
+}
+
+.dk-footer-box-info-mobile {
+    position: absolute;
+    top: -63px;
+    background: #393939;
+    border-radius: 20px;
+    z-index: 2;
+    width: 315px;
+    height: 400px;
+    left: 13%;
 }
 
 .dk-footer-box-info1 {
